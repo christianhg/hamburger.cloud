@@ -1,0 +1,20 @@
+{
+  "name": "hamburger.cloud",
+  "description": "Hamburger in the Cloud",
+  "author": "Christian Hamburger Grøngaard <christianhg@gmail.com>",
+  "dependencies": {
+    "gatsby": "^1.9.158",
+    "gatsby-link": "^1.6.34",
+    "gatsby-plugin-google-tagmanager": "^1.0.13",
+    "gatsby-plugin-react-helmet": "^2.0.3",
+    "react-helmet": "^5.2.0"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "dist": "gatsby build",
+    "prettier": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{src/**/,./}*.js\""
+  },
+  "devDependencies": {
+    "prettier": "^1.10.2"
+  }
+}

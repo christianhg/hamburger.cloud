@@ -1,0 +1,18 @@
+body {
+  line-height: 1;
+  text-align: center;
+}
+span {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.cloud {
+  font-size: 7em;
+  z-index: 0;
+}
+.hamburger {
+  font-size: 3em;
+  z-index: 1;
+}
