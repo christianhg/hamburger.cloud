@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'hamburger.cloud',
   },
+  pathPrefix: `/hamburger.cloud`,
   plugins: [
     'gatsby-plugin-react-helmet',
     {
