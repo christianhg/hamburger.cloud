@@ -11,7 +11,7 @@
   },
   "scripts": {
     "dev": "gatsby develop",
-    "dist": "npm run prettier-production && gatsby build --prefix-paths",
+    "dist": "npm run prettier-production && gatsby build",
     "prettier": "prettier --write \"{src/**/,./}*.js\"",
     "prettier-production": "prettier --list-different \"{src/**/,./}*.js\""
   },
