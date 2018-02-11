@@ -12,8 +12,9 @@
   "scripts": {
     "dev": "gatsby develop",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "dist": "gatsby build",
-    "prettier": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{src/**/,./}*.js\""
+    "dist": "npm run prettier-production && gatsby build",
+    "prettier": "prettier --write \"{src/**/,./}*.js\"",
+    "prettier-production": "prettier --list-different \"{src/**/,./}*.js\""
   },
   "devDependencies": {
     "gh-pages": "^1.1.0",
