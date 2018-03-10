@@ -4,7 +4,7 @@
   "author": "Christian Hamburger Grøngaard <christianhg@gmail.com>",
   "scripts": {
     "dev": "gatsby develop",
-    "dist": "npm run prettier-production && gatsby build",
+    "dist": "npm run prettier-production && gatsby build && cp googlecfb0a8661b3fb380.html public",
     "prettier": "prettier --write \"{**/*,*}.{md,js,scss}\"",
     "prettier-production": "prettier --list-different \"{**/*,*}.{md,js,scss}\""
   },
