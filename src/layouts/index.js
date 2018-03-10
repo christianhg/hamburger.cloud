@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import './index.css'
+import 'modern-normalize'
+import 'prismjs/themes/prism.css'
+import './index.scss'
 
 const TemplateWrapper = ({ children }) => (
   <div>

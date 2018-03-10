@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'FiraCode';
+  src: url('../fonts/FiraCode-Regular.woff2') format('woff2'),
+    url('../fonts/FiraCode-Regular.woff') format('woff');
+}
+
+body {
+  line-height: 1.75;
+  margin: 5%;
+}
+
+main {
+  max-width: 600px;
+}
+
+code,
+pre {
+  font-family: 'FiraCode';
+}
+
+.date {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
