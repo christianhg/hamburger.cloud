@@ -2,7 +2,7 @@ import React from 'react'
 
 export const About = () => (
   <section>
-    <h2>About</h2>
+    <h2>Christian Hamburger Grøngaard</h2>
     <ul>
       <li>Functional programming enthusiast.</li>
       <li>
