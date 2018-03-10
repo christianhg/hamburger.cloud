@@ -9,10 +9,16 @@ import './index.scss'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="hamburger.cloud"
+      title="🍔.☁️"
       meta={[
-        { name: 'description', content: 'Hamburger in the Cloud' },
-        { name: 'keywords', content: 'hamburger, cloud' },
+        {
+          name: 'description',
+          content: 'Personal website of Christian Hamburger Grøngaard',
+        },
+        {
+          name: 'keywords',
+          content: 'hamburger, cloud, christian, grøngaard',
+        },
       ]}
     />
     {children()}
