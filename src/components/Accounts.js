@@ -39,7 +39,7 @@ const Account = account => (
 
 export const Accounts = () => (
   <section>
-    <h2>Explore</h2>
+    <h2>Elsewhere</h2>
     <ol>{accounts.map(Account)}</ol>
   </section>
 )
