@@ -1,6 +1,6 @@
 {
   "name": "hamburger.cloud",
-  "description": "Hamburger in the Cloud",
+  "description": "Personal website of Christian Hamburger Grøngaard",
   "author": "Christian Hamburger Grøngaard <christianhg@gmail.com>",
   "scripts": {
     "dev": "gatsby develop",
