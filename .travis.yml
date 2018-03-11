@@ -9,6 +9,8 @@ branches:
   - master
 env:
   global:
+  - ARTIFACT=public.tgz
+  - DIST_DIR=public
   - REMOTE_APP_DIR=/var/www/hamburger.cloud
   - REMOTE_USER=travis
   - REMOTE_HOST=37.139.24.127
