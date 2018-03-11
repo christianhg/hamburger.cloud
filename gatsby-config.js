@@ -4,10 +4,10 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-tagmanager`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        id: 'UA-35381607-10',
-        includeInDevelopment: false,
+        trackingId: 'UA-35381607-10',
+        head: false,
       },
     },
     'gatsby-plugin-react-helmet',
