@@ -46,3 +46,7 @@ When commiting code it might be helpful to:
 * Follow the summary with a detailed explanation if necessary.
 
 Commiting code is easy - but not very useful - if a programmer approaches the tool as the equivalent of CTRL+S. But commiting code should be much more than that: it should be about communication, reflection and honesty. When developing software, collaboration and communication is key. And Git is our tool for achieving this at code level.
+
+Note that the above-mentioned rigorousness mainly should be applied when preparing pull requests or working directly on shared branches. Being "in the zone" and not switching context too often is important. Thus, structuring and authoring commits can easily be an afterthought to what's really at stake: getting the job done.
+
+And don't forget to `git commit -m "WIP" && git push` before you leave the office.
