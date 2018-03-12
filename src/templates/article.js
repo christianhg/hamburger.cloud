@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import { HamburgerCloud } from '../components/HamburgerCloud'
 
@@ -8,6 +9,14 @@ export default function Template({ data }) {
 
   return (
     <div>
+      <Helmet>
+        <title>{`🍔.☁️ ${frontmatter.title}`}</title>
+        {frontmatter.lead ? (
+          <meta name="description" content={frontmatter.lead} />
+        ) : (
+          undefined
+        )}
+      </Helmet>
       <HamburgerCloud />
       <main>
         <h1>{frontmatter.title}</h1>
