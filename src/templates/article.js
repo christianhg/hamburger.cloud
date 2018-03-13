@@ -31,7 +31,7 @@ export default function Template({ data }) {
           name="og:url"
           content={`https://hamburger.cloud${frontmatter.path}`}
         />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <HamburgerCloud />
       <main>
