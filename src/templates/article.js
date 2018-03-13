@@ -27,6 +27,10 @@ export default function Template({ data }) {
             }`}
           />
         )}
+        <meta
+          name="og:url"
+          content={`https://hamburger.cloud${frontmatter.path}`}
+        />
       </Helmet>
       <HamburgerCloud />
       <main>
