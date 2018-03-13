@@ -13,15 +13,11 @@ export default function Template({ data }) {
       <Helmet>
         <title>{`🍔.☁️ ${frontmatter.title}`}</title>
         <meta property="og:title" content={`🍔.☁️ ${frontmatter.title}`} />
-        {frontmatter.lead ? (
+        {frontmatter.lead && (
           <meta name="description" content={frontmatter.lead} />
-        ) : (
-          undefined
         )}
-        {frontmatter.lead ? (
+        {frontmatter.lead && (
           <meta name="og:description" content={frontmatter.lead} />
-        ) : (
-          undefined
         )}
         {frontmatter.image && (
           <meta
