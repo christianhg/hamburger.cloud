@@ -17,18 +17,18 @@ export default function Template({ data }) {
           <meta name="description" content={frontmatter.lead} />
         )}
         {frontmatter.lead && (
-          <meta name="og:description" content={frontmatter.lead} />
+          <meta property="og:description" content={frontmatter.lead} />
         )}
         {frontmatter.image && (
           <meta
-            name="og:image"
+            property="og:image"
             content={`https://hamburger.cloud${
               frontmatter.image.childImageSharp.resize.src
             }`}
           />
         )}
         <meta
-          name="og:url"
+          property="og:url"
           content={`https://hamburger.cloud${frontmatter.path}`}
         />
         <meta name="twitter:card" content="summary_large_image" />
