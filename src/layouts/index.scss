@@ -23,5 +23,9 @@ pre {
 }
 
 a {
+  color: #32946f;
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
