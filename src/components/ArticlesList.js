@@ -1,18 +1,31 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
+
+import { ArticleDate } from './ArticleDate'
+
+const ArticleList = styled.ol`
+  padding-left: 0;
+`
+
+const Article = styled.li`
+  list-style: none;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column-reverse;
+`
 
 export const ArticlesList = ({ articles }) => (
   <section>
-    <h2>Articles</h2>
-    <ol>
+    <h2>Writings</h2>
+    <ArticleList>
       {articles.map(article => (
-        <li key={article.id}>
-          <Link to={article.path}>
-            {article.title} ({article.date})
-          </Link>
-        </li>
+        <Article key={article.id}>
+          <Link to={article.path}>{article.title}</Link>
+          <ArticleDate>{article.date}</ArticleDate>
+        </Article>
       ))}
-    </ol>
+    </ArticleList>
   </section>
 )
 

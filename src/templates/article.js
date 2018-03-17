@@ -2,6 +2,7 @@ import Img from 'gatsby-image'
 import React from 'react'
 import Helmet from 'react-helmet'
 
+import { ArticleDate } from '../components/ArticleDate'
 import { HamburgerCloud } from '../components/HamburgerCloud'
 
 export default function Template({ data }) {
@@ -36,7 +37,9 @@ export default function Template({ data }) {
       <HamburgerCloud />
       <main>
         <h1>{frontmatter.title}</h1>
-        <p className="date">{frontmatter.date}</p>
+        <p>
+          <ArticleDate>{frontmatter.date}</ArticleDate>
+        </p>
         {frontmatter.image && (
           <Img sizes={frontmatter.image.childImageSharp.sizes} />
         )}
