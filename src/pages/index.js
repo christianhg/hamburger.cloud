@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import { About } from '../components/About'
 import { Accounts } from '../components/Accounts'
@@ -6,12 +7,12 @@ import { ArticlesList, nodeToArticle } from '../components/ArticlesList'
 import { HamburgerCloud } from '../components/HamburgerCloud'
 
 const Index = ({ data }) => (
-  <div>
+  <main>
     <HamburgerCloud />
     <About />
     <ArticlesList articles={data.allMarkdownRemark.edges.map(nodeToArticle)} />
     <Accounts />
-  </div>
+  </main>
 )
 
 export default Index

@@ -6,7 +6,7 @@ import { ArticleDate } from './ArticleDate'
 
 const ArticleList = styled.ol`
   padding-left: 0;
-`
+  `
 
 const Article = styled.li`
   list-style: none;
