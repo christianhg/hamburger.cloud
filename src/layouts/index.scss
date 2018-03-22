@@ -4,7 +4,12 @@
     url('../fonts/FiraCode-Regular.woff') format('woff');
 }
 
+$color-dark: rgb(30, 30, 30);
+$color-light: rgb(245, 245, 245);
+
 body {
+  background-color: $color-light;
+  color: $color-dark;
   line-height: 1.75;
   margin: 5%;
 }
