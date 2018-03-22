@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import { ArticleDate } from '../components/ArticleDate'
 import { HamburgerCloud } from '../components/HamburgerCloud'
+import { Src } from '../components/Src'
 
 export default function Template({ data }) {
   const { markdownRemark } = data
@@ -46,6 +47,7 @@ export default function Template({ data }) {
         <p className="lead">{frontmatter.lead}</p>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </main>
+      <Src />
     </div>
   )
 }

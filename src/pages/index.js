@@ -4,6 +4,7 @@ import { About } from '../components/About'
 import { Accounts } from '../components/Accounts'
 import { ArticlesList, nodeToArticle } from '../components/ArticlesList'
 import { HamburgerCloud } from '../components/HamburgerCloud'
+import { Src } from '../components/Src'
 
 const Index = ({ data }) => (
   <div>
@@ -11,6 +12,7 @@ const Index = ({ data }) => (
     <About />
     <ArticlesList articles={data.allMarkdownRemark.edges.map(nodeToArticle)} />
     <Accounts />
+    <Src />
   </div>
 )
 
