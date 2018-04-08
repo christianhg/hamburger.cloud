@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 200">
+    <path fill="#FF6138" d="M150 150H50V50h100c0 50 25 50 25 50s-25 0-25 50z" opacity=".4"/>
+    <path opacity=".1" fill="#FFF" d="M50 150L150 50H50z"/>
+    <path fill="#FF6138" d="M275 150H175V50h100c0 50 25 50 25 50s-25 0-25 50z" opacity=".55"/>
+    <path opacity=".1" fill="#FFF" d="M175 150L275 50H175z"/>
+    <path fill="#FF6138" d="M400 150H300V50h100c0 50 25 50 25 50s-25 0-25 50z" opacity=".7"/>
+    <path opacity=".1" fill="#FFF" d="M300 150L400 50H300z"/>
+    <path fill="#FF6138" d="M525 150H425V50h100c0 50 25 50 25 50s-25 0-25 50z" opacity=".85"/>
+    <path opacity=".1" fill="#FFF" d="M425 150L525 50H425z"/>
+    <path fill="#FF6138" d="M550 50h100v100H550z"/>
+    <path opacity=".1" fill="#FFF" d="M550 150L650 50H550z"/>
+</svg>
