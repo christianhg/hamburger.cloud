@@ -13,7 +13,7 @@ export default function Template({ data }) {
   return (
     <div>
       <Helmet>
-        <title>{`🍔.☁️ ${frontmatter.title}`}</title>
+        <title>{`${frontmatter.title}`}</title>
         <meta property="og:title" content={`🍔.☁️ ${frontmatter.title}`} />
         {frontmatter.lead && (
           <meta name="description" content={frontmatter.lead} />
