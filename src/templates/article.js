@@ -3,7 +3,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import { ArticleDate } from '../components/ArticleDate'
-import { HamburgerCloud } from '../components/HamburgerCloud'
+import { Header } from '../components/Header'
 import { Src } from '../components/Src'
 
 export default function Template({ data }) {
@@ -35,7 +35,7 @@ export default function Template({ data }) {
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-      <HamburgerCloud />
+      <Header />
       <main>
         <h1>{frontmatter.title}</h1>
         <p>

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { HamburgerCloud } from '../components/HamburgerCloud'
+import { Header } from '../components/Header'
 
-const NotFoundPage = () => <HamburgerCloud negative="true" />
+const NotFoundPage = () => <Header />
 
 export default NotFoundPage
