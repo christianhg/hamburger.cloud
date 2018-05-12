@@ -1,9 +1,3 @@
-@font-face {
-  font-family: 'FiraCode';
-  src: url('../fonts/FiraCode-Regular.woff2') format('woff2'),
-    url('../fonts/FiraCode-Regular.woff') format('woff');
-}
-
 $color-dark: rgb(30, 30, 30);
 $color-light: rgb(245, 245, 245);
 
@@ -16,11 +10,6 @@ body {
 
 main {
   max-width: 600px;
-}
-
-code,
-pre {
-  font-family: 'FiraCode';
 }
 
 .lead {
