@@ -1,12 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import 'modern-normalize'
 import 'prismjs/themes/prism.css'
-import './index.scss'
+import './layout.scss'
 
-const TemplateWrapper = ({ children }) => (
+const Layout = ({ children }) => (
   <div>
     <Helmet
       title="Personal website of Christian Hamburger Grøngaard"
@@ -21,12 +20,8 @@ const TemplateWrapper = ({ children }) => (
         },
       ]}
     />
-    {children()}
+    {children}
   </div>
 )
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-}
-
-export default TemplateWrapper
+export default Layout

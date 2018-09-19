@@ -1,7 +1,7 @@
 ---
-path: "/currying-javascript"
-date: "2017-03-27"
-title: "Currying JavaScript 🍛"
+path: '/currying-javascript'
+date: '2017-03-27'
+title: 'Currying JavaScript 🍛'
 ---
 
 [Currying](https://en.wikipedia.org/wiki/Currying) is the useful technique of transforming a function that takes multiple arguments into a sequence of functions that all take a single argument.
