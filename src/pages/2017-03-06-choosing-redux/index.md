@@ -1,8 +1,8 @@
 ---
-path: "/choosing-redux"
-date: "2017-03-06"
-title: "Choosing Redux"
-lead: "Choosing Redux to manage state in an AngularJS application"
+path: '/choosing-redux'
+date: '2017-03-06'
+title: 'Choosing Redux'
+lead: 'Choosing Redux to manage state in an AngularJS application'
 ---
 
 Redux is not as much a library as it is a programming pattern. And it is a powerful pattern. With an API of only 5 functions, a footprint of 2kB, and written in a some 200 lines of source code, Redux can enlighten the path to better state management. State management does not have to be a dreadful, unpredictable bug-magnet. It can be both fun and predictable.

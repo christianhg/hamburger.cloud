@@ -1,8 +1,8 @@
 ---
-path: "/immutable-javascript"
-date: "2017-04-17"
-title: "Immutable JavaScript"
-lead: "What is immutability, how can it be achieved in JavaScript and why should you care?"
+path: '/immutable-javascript'
+date: '2017-04-17'
+title: 'Immutable JavaScript'
+lead: 'What is immutability, how can it be achieved in JavaScript and why should you care?'
 ---
 
 > **immutable**<br>

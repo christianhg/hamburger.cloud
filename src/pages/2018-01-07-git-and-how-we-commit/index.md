@@ -1,9 +1,9 @@
 ---
-path: "/git-and-how-we-commit"
-date: "2018-01-07"
-title: "Git (and how we Commit)"
-lead: "When developing software, collaboration and communication is key. And Git is our tool for achieving this at code level."
-image: "./git-and-how-we-commit.jpg"
+path: '/git-and-how-we-commit'
+date: '2018-01-07'
+title: 'Git (and how we Commit)'
+lead: 'When developing software, collaboration and communication is key. And Git is our tool for achieving this at code level.'
+image: './git-and-how-we-commit.jpg'
 ---
 
 Most of us work asynchronously, as a distributed team, on a shared body of work, and when not sharing our wisdom in Slack and in various meetings, we speak to each other through the code we produce. Luckily Git allows us to annotate and separate this code into semantic pieces that heighten this communication.
@@ -34,17 +34,17 @@ If the commit history is an elevator ride through the life of a project, each co
 
 Properly annotated commits of contained changesets will make the elevator ride more pleasant by:
 
-* Making it easier to revert one of the changesets later.
-* Speeding up reviewing processes.
-* Helping future developers (including oneself) answer questions like: "What were we thinking when this was added?"
+- Making it easier to revert one of the changesets later.
+- Speeding up reviewing processes.
+- Helping future developers (including oneself) answer questions like: "What were we thinking when this was added?"
 
 ## In conclusion
 
 When commiting code it might be helpful to:
 
-* Make each commit a logically separate changeset.
-* Keep the summary of the commit message concise.
-* Follow the summary with a detailed explanation if necessary.
+- Make each commit a logically separate changeset.
+- Keep the summary of the commit message concise.
+- Follow the summary with a detailed explanation if necessary.
 
 Commiting code is easy - but not very useful - if a programmer approaches the tool as the equivalent of CTRL+S. But commiting code should be much more than that: it should be about communication, reflection and honesty. When developing software, collaboration and communication is key. And Git is our tool for achieving this at code level.
 

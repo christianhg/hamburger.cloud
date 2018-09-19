@@ -1,17 +1,17 @@
 import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
-
 import { ArticleDate } from '../components/ArticleDate'
 import { Header } from '../components/Header'
 import { Src } from '../components/Src'
 
-export default function Template({ data }) {
+export default ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
 
   return (
-    <div>
+    <>
       <Helmet>
         <title>{`${frontmatter.title}`}</title>
         <meta property="og:title" content={`🍔.☁️ ${frontmatter.title}`} />
@@ -48,11 +48,11 @@ export default function Template({ data }) {
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </main>
       <Src />
-    </div>
+    </>
   )
 }
 
-export const pageQuery = graphql`
+export const query = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html

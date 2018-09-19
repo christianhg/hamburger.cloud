@@ -1,8 +1,8 @@
 ---
-path: "/hashes-and-salts"
-date: "2017-04-01"
-title: "Hashes and Salts"
-lead: "A lightweight introduction to the theory of hashing and salting passwords"
+path: '/hashes-and-salts'
+date: '2017-04-01'
+title: 'Hashes and Salts'
+lead: 'A lightweight introduction to the theory of hashing and salting passwords'
 ---
 
 It goes without saying that passwords should be handled with a certain type of carefulness. Storing passwords in cleartext is a practice of the past. In fact, using passwords at all, as means of authentication, seems to be slowly going away in favour of [Passwordless Authentication](https://auth0.com/blog/how-passwordless-authentication-works/).
