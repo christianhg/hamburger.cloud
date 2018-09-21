@@ -90,6 +90,18 @@ module.exports = {
         head: false,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `hamburger.cloud`,
+        short_name: `hamburger.cloud`,
+        start_url: `/`,
+        background_color: `#f5f5f5`,
+        theme_color: `#32946f`,
+        display: `minimal-ui`,
+        icon: `src/favicon.png`,
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
