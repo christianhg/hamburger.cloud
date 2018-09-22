@@ -1,11 +1,10 @@
 import { graphql, StaticQuery } from 'gatsby'
 import React from 'react'
 import { About } from '../components/About'
-import { Accounts } from '../components/Accounts'
 import { ArticlesList, nodeToArticle } from '../components/ArticlesList'
+import Footer from '../components/footer'
 import { Header } from '../components/Header'
 import Layout from '../components/layout'
-import { Src } from '../components/Src'
 
 export default () => (
   <StaticQuery
@@ -28,12 +27,13 @@ export default () => (
     render={data => (
       <Layout>
         <Header />
-        <About />
-        <ArticlesList
-          articles={data.allMarkdownRemark.edges.map(nodeToArticle)}
-        />
-        <Accounts />
-        <Src />
+        <main>
+          <About />
+          <ArticlesList
+            articles={data.allMarkdownRemark.edges.map(nodeToArticle)}
+          />
+        </main>
+        <Footer />
       </Layout>
     )}
   />

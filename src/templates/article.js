@@ -4,7 +4,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { ArticleDate } from '../components/ArticleDate'
 import { Header } from '../components/Header'
-import { Src } from '../components/Src'
+import Footer from '../components/footer'
 
 export default ({ data }) => {
   const { markdownRemark } = data
@@ -47,7 +47,7 @@ export default ({ data }) => {
         <p className="lead">{frontmatter.lead}</p>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </main>
-      <Src />
+      <Footer />
     </>
   )
 }

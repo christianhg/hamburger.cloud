@@ -1,3 +1,4 @@
+import { always, cond, dec, equals, T } from 'ramda'
 import React from 'react'
 
 const accounts = [
@@ -29,16 +30,33 @@ const accounts = [
 ]
 
 const Account = account => (
-  <li key={account.link}>
-    <a href={account.link} rel="me">
-      {account.name}/<strong>{account.username}</strong>
-    </a>
-  </li>
+  <a
+    key={account.link}
+    href={account.link}
+    rel="me"
+    title={`${account.name}/${account.username}`}
+  >
+    {account.name}
+  </a>
 )
 
 export const Accounts = () => (
-  <section>
-    <h2>Elsewhere</h2>
-    <ol>{accounts.map(Account)}</ol>
-  </section>
+  <p>
+    Find Christian elsewhere on{' '}
+    {accounts
+      .map(Account)
+      .reduce(
+        (result, account, index) =>
+          cond([
+            [equals(0), always([account])],
+            [
+              equals(dec(accounts.length)),
+              always([...result, ' or ', account]),
+            ],
+            [T, always([...result, ', ', account])],
+          ])(index),
+        []
+      )}
+    .
+  </p>
 )
