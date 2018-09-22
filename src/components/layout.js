@@ -6,7 +6,7 @@ import 'prismjs/themes/prism.css'
 import './layout.scss'
 
 const Layout = ({ children }) => (
-  <div>
+  <>
     <Helmet
       title="Personal website of Christian Hamburger Grøngaard"
       meta={[
@@ -21,7 +21,7 @@ const Layout = ({ children }) => (
       ]}
     />
     {children}
-  </div>
+  </>
 )
 
 export default Layout
