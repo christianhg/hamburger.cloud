@@ -42,7 +42,7 @@ export default ({ data }) => {
           <ArticleDate>{frontmatter.date}</ArticleDate>
         </p>
         {frontmatter.image && (
-          <Img sizes={frontmatter.image.childImageSharp.sizes} />
+          <Img fluid={frontmatter.image.childImageSharp.fluid} />
         )}
         <p className="lead">{frontmatter.lead}</p>
         <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -64,8 +64,8 @@ export const query = graphql`
             resize(width: 960) {
               src
             }
-            sizes(maxWidth: 960) {
-              ...GatsbyImageSharpSizes
+            fluid(maxWidth: 960) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
