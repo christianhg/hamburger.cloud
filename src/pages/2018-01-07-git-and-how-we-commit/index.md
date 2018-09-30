@@ -38,7 +38,7 @@ Properly annotated commits of contained changesets will make the elevator ride m
 - Speeding up reviewing processes.
 - Helping future developers (including oneself) answer questions like: "What were we thinking when this was added?"
 
-## In conclusion
+## In Conclusion
 
 When commiting code it might be helpful to:
 
