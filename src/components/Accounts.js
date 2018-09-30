@@ -57,6 +57,5 @@ export const Accounts = () => (
           ])(index),
         []
       )}
-    .
   </p>
 )

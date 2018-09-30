@@ -4,6 +4,7 @@ import { Accounts } from './Accounts'
 import { Src } from './Src'
 
 const Footer = styled.footer`
+  font-size: 0.9em;
   padding-top: 2em;
   position: relative;
   &::before {
@@ -19,6 +20,7 @@ const Footer = styled.footer`
 
 export default () => (
   <Footer>
+    <p>Copyright © {new Date().getFullYear()} Christian Hamburger Grøngaard</p>
     <Accounts />
     <Src />
   </Footer>
