@@ -94,7 +94,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `hamburger.cloud`,
-        short_name: `hamburger.cloud`,
+        short_name: `🍔.☁️`,
         start_url: `/`,
         background_color: `#f5f5f5`,
         theme_color: `#32946f`,
