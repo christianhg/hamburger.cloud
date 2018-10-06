@@ -19,7 +19,9 @@ const Layout = ({ children }) => (
           content: 'hamburger, cloud, christian, grøngaard',
         },
       ]}
-    />
+    >
+      <html lang="en" />
+    </Helmet>
     {children}
   </>
 )
