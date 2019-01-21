@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "gatsby develop",
     "dist": "npm run prettier-production && gatsby build && cp googlecfb0a8661b3fb380.html public",
-    "prettier": "prettier --write \"{**/*,*}.{md,js,scss,yml}\"",
-    "prettier-production": "prettier --list-different \"{**/*,*}.{md,js,scss,yml}\""
+    "prettier": "prettier --write \"{**/*,*}.{md,js,css,yml}\"",
+    "prettier-production": "prettier --list-different \"{**/*,*}.{md,js,css,yml}\""
   },
   "dependencies": {},
   "devDependencies": {
@@ -19,9 +19,7 @@
     "gatsby-plugin-google-analytics": "^2.0.9",
     "gatsby-plugin-manifest": "^2.0.13",
     "gatsby-plugin-react-helmet": "^3.0.5",
-    "gatsby-plugin-sass": "^2.0.7",
     "gatsby-plugin-sharp": "^2.0.17",
-    "gatsby-plugin-styled-components": "^3.0.4",
     "gatsby-remark-copy-linked-files": "^2.0.8",
     "gatsby-remark-images": "^3.0.1",
     "gatsby-remark-prismjs": "^3.2.0",
@@ -35,7 +33,6 @@
     "ramda": "^0.26.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-helmet": "^5.2.0",
-    "styled-components": "^4.1.3"
+    "react-helmet": "^5.2.0"
   }
 }

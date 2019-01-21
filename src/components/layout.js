@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import 'modern-normalize'
 import 'prismjs/themes/prism.css'
-import './layout.scss'
+import './layout.css'
 
 const Layout = ({ children }) => (
   <>

@@ -2,7 +2,6 @@ import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
-import { ArticleDate } from '../components/ArticleDate'
 import { Header } from '../components/Header'
 import Footer from '../components/footer'
 
@@ -40,7 +39,7 @@ export default ({ data }) => {
       <main>
         <h1>{frontmatter.title}</h1>
         <p>
-          <ArticleDate>{frontmatter.date}</ArticleDate>
+          <span className="article-date">{frontmatter.date}</span>
         </p>
         {frontmatter.image && (
           <Img fluid={frontmatter.image.childImageSharp.fluid} />

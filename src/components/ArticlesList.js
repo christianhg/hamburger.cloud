@@ -1,35 +1,19 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import styled from 'styled-components'
-import { ArticleDate } from './ArticleDate'
-
-const FlipVertically = styled.span`
-  display: inline-flex;
-  flex-direction: column-reverse;
-`
-
-const ArticleList = styled.ol`
-  padding-left: 0;
-`
-
-const Article = styled.li`
-  list-style: none;
-  margin-bottom: 1em;
-`
 
 export const ArticlesList = ({ articles }) => (
   <section>
     <h2>Writings</h2>
-    <ArticleList>
+    <ol className="article-list">
       {articles.map(article => (
-        <Article key={article.id}>
-          <FlipVertically>
+        <li className="article-list-item" key={article.id}>
+          <span className="flip-vertically">
             <Link to={article.path}>{article.title}</Link>
-            <ArticleDate>{article.date}</ArticleDate>
-          </FlipVertically>
-        </Article>
+            <span className="article-date">{article.date}</span>
+          </span>
+        </li>
       ))}
-    </ArticleList>
+    </ol>
   </section>
 )
 
