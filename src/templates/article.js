@@ -12,7 +12,7 @@ export default ({ data }) => {
   return (
     <>
       <Helmet>
-        <html lang="head" />
+        <html lang="en" />
         <title>{`${frontmatter.title}`}</title>
         <meta property="og:title" content={`🍔.☁️ ${frontmatter.title}`} />
         {frontmatter.lead && (
