@@ -5,6 +5,10 @@ import Helmet from 'react-helmet'
 import { Header } from '../components/Header'
 import Footer from '../components/footer'
 
+import 'modern-normalize'
+import 'prismjs/themes/prism.css'
+import '../assets/layout.css'
+
 export default ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
