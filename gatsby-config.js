@@ -102,7 +102,6 @@ module.exports = {
         icon: `src/favicon.png`,
       },
     },
-    `gatsby-plugin-offline`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
