@@ -1,14 +1,10 @@
 import { graphql, StaticQuery } from 'gatsby'
 import React from 'react'
-import Helmet from 'react-helmet'
 import { About } from '../components/About'
 import { ArticlesList, nodeToArticle } from '../components/ArticlesList'
 import Footer from '../components/footer'
 import { Header } from '../components/Header'
-
-import 'modern-normalize'
-import 'prismjs/themes/prism.css'
-import '../assets/layout.css'
+import Layout from '../components/layout'
 
 export default () => (
   <StaticQuery
@@ -29,22 +25,7 @@ export default () => (
       }
     `}
     render={data => (
-      <>
-        <Helmet
-          title="Personal website of Christian Hamburger Grøngaard"
-          meta={[
-            {
-              name: 'description',
-              content: 'Personal website of Christian Hamburger Grøngaard',
-            },
-            {
-              name: 'keywords',
-              content: 'hamburger, cloud, christian, grøngaard',
-            },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
+      <Layout>
         <Header />
         <main>
           <About />
@@ -53,7 +34,7 @@ export default () => (
           />
         </main>
         <Footer />
-      </>
+      </Layout>
     )}
   />
 )
