@@ -1,40 +1,23 @@
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import React from 'react'
-import Helmet from 'react-helmet'
 import { Header } from '../components/Header'
 import Footer from '../components/footer'
+import Layout from '../components/layout'
 
 export default ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
 
   return (
-    <>
-      <Helmet>
-        <html lang="en" />
-        <title>{`${frontmatter.title}`}</title>
-        <meta property="og:title" content={`🍔.☁️ ${frontmatter.title}`} />
-        {frontmatter.lead && (
-          <meta name="description" content={frontmatter.lead} />
-        )}
-        {frontmatter.lead && (
-          <meta property="og:description" content={frontmatter.lead} />
-        )}
-        {frontmatter.image && (
-          <meta
-            property="og:image"
-            content={`https://hamburger.cloud${
-              frontmatter.image.childImageSharp.resize.src
-            }`}
-          />
-        )}
-        <meta
-          property="og:url"
-          content={`https://hamburger.cloud${frontmatter.path}`}
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Helmet>
+    <Layout
+      config={{
+        title: frontmatter.title,
+        description: frontmatter.lead,
+        image: frontmatter.image,
+        path: frontmatter.path,
+      }}
+    >
       <Header />
       <main>
         <h1>{frontmatter.title}</h1>
@@ -48,7 +31,7 @@ export default ({ data }) => {
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </main>
       <Footer />
-    </>
+    </Layout>
   )
 }
 

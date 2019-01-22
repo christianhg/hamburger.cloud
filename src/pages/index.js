@@ -25,7 +25,14 @@ export default () => (
       }
     `}
     render={data => (
-      <Layout>
+      <Layout
+        config={{
+          title: 'Personal website of Christian Hamburger Grøngaard',
+          description: 'Personal website of Christian Hamburger Grøngaard',
+          keywords: 'hamburger, cloud, christian, grøngaard',
+          path: '/',
+        }}
+      >
         <Header />
         <main>
           <About />
