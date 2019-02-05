@@ -10,7 +10,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.0.98",
     "gatsby-image": "^2.0.28",
     "gatsby-plugin-canonical-urls": "^2.0.8",
@@ -27,7 +26,6 @@
     "gatsby-transformer-remark": "^2.2.0",
     "gatsby-transformer-sharp": "^2.1.12",
     "modern-normalize": "^0.5.0",
-    "node-sass": "^4.11.0",
     "prettier": "^1.16.1",
     "prismjs": "^1.15.0",
     "ramda": "^0.26.1",
