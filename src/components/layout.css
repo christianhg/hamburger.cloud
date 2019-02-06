@@ -65,3 +65,13 @@ footer::before {
   display: block;
   width: 50px;
 }
+
+.gatsby-highlight-code-line {
+  background: rgba(0, 0, 0, 0.1);
+  border-left: 0.25em solid rgb(30, 30, 30);
+  display: block;
+  margin-left: -1em;
+  margin-right: -1em;
+  padding-left: 0.75em;
+  padding-right: 1em;
+}
