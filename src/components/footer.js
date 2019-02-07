@@ -8,8 +8,9 @@ export default () => (
     <div className="inner">
       <img src={christian} alt="Christian at Aurlandsfjellet" />
       <p>
-        This is Christian on Aurlandsfjellet. His full name is{' '}
-        <strong>Christian Hamburger Grøngaard</strong>.
+        This is Christian on{' '}
+        <a href="https://goo.gl/maps/KkKsVQ9nhNn">Aurlandsfjellet</a>. His full
+        name is <strong>Christian Hamburger Grøngaard</strong>.
       </p>
       <p>
         Currently he works as a front-end developer at{' '}
