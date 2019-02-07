@@ -1,13 +1,13 @@
-import Img from 'gatsby-image'
-import { graphql } from 'gatsby'
-import React from 'react'
-import { Header } from '../components/Header'
-import Footer from '../components/footer'
-import Layout from '../components/layout'
+import Img from 'gatsby-image';
+import { graphql } from 'gatsby';
+import React from 'react';
+import { Header } from '../components/Header';
+import Footer from '../components/footer';
+import Layout from '../components/layout';
 
 export default ({ data }) => {
-  const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
+  const { markdownRemark } = data;
+  const { frontmatter, html } = markdownRemark;
 
   return (
     <Layout
@@ -34,8 +34,8 @@ export default ({ data }) => {
       </main>
       <Footer />
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query BlogPostByPath($path: String!) {
@@ -59,4 +59,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

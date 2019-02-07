@@ -1,5 +1,5 @@
-import { Link } from 'gatsby'
-import React from 'react'
+import { Link } from 'gatsby';
+import React from 'react';
 
 export const ArticlesList = ({ articles }) => (
   <section>
@@ -15,11 +15,11 @@ export const ArticlesList = ({ articles }) => (
       ))}
     </ol>
   </section>
-)
+);
 
 export const nodeToArticle = ({ node }) => ({
   date: node.frontmatter.date,
   id: node.id,
   path: node.frontmatter.path,
   title: node.frontmatter.title,
-})
+});

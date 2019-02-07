@@ -1,10 +1,10 @@
-import { graphql, StaticQuery } from 'gatsby'
-import React from 'react'
-import { About } from '../components/About'
-import { ArticlesList, nodeToArticle } from '../components/ArticlesList'
-import Footer from '../components/footer'
-import { Header } from '../components/Header'
-import Layout from '../components/layout'
+import { graphql, StaticQuery } from 'gatsby';
+import React from 'react';
+import { About } from '../components/About';
+import { ArticlesList, nodeToArticle } from '../components/ArticlesList';
+import Footer from '../components/footer';
+import { Header } from '../components/Header';
+import Layout from '../components/layout';
 
 export default () => (
   <StaticQuery
@@ -46,4 +46,4 @@ export default () => (
       </Layout>
     )}
   />
-)
+);

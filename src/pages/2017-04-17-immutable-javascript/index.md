@@ -16,9 +16,9 @@ There is a rising trend in the JavaScript community to strive for immutability, 
 One of the most common array operations is **push** - the operation that appends a new entry to an array. In the following example we declare an array of natural numbers and add `4` to it using [`Array.prototype.push`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push):
 
 ```js
-const natural = [0, 1, 2, 3]
+const natural = [0, 1, 2, 3];
 
-natural.push(4)
+natural.push(4);
 // => 5
 ```
 
@@ -27,7 +27,7 @@ You might be wondering why the expression `natural.push(4)` resulted in the valu
 Arrays in JavaScript are **mutable** and inspecting the original `natural` array reveals that it has in fact been mutated:
 
 ```js
-natural
+natural;
 // => [0, 1, 2, 3, 4]
 ```
 
@@ -36,12 +36,12 @@ In JavaScript the six primitive types - Boolean, Null, Number, String, Symbol an
 When working with primitive types, it is impossible to change their values. Instead you create new values from them:
 
 ```js
-const alphabet = 'abcd'
+const alphabet = 'abcd';
 
-alphabet.concat('e')
+alphabet.concat('e');
 // => "abcde"
 
-alphabet
+alphabet;
 // => "abcd"
 ```
 
@@ -51,11 +51,11 @@ As for objects, nothing is stopping you from overwriting their properties. In th
 const player = {
   damage: 50,
   health: 80,
-}
+};
 
-player.health = 70
+player.health = 70;
 
-player
+player;
 // => { damage: 50, health: 70 }
 ```
 
@@ -65,7 +65,7 @@ As it happens, it is possible to do any array operation in an immutable fashion 
 
 <!-- prettier-ignore -->
 ```js
-const odd = [1, 3, 5, 7]; // <-- eew, necessary ; before [
+const odd = [1, 3, 5, 7];
 
 [...odd, 9]
 // => [1, 3, 5, 7, 9]
@@ -84,13 +84,13 @@ It turns out, it's possible to "freeze" an object using [`Object.freeze`](https:
 const player = {
   damage: 50,
   health: 80,
-}
+};
 
-Object.freeze(player)
+Object.freeze(player);
 
-player.health = 70
+player.health = 70;
 
-player
+player;
 // => { damage: 50, health: 80 }
 ```
 
@@ -102,12 +102,12 @@ To decrease the `health` of the `player` in an immutable fashion, a new object h
 const player = {
   damage: 50,
   health: 80,
-}
+};
 
-Object.assign({}, player, { health: 70 })
+Object.assign({}, player, { health: 70 });
 // => { damage: 50, health: 70 }
 
-player
+player;
 // => { damage: 50, health: 80 }
 ```
 
@@ -123,19 +123,19 @@ Consider the following function that returns the tail of an array:
 
 ```js
 function tail(arr) {
-  return arr.splice(1)
+  return arr.splice(1);
 }
 
-const even = [2, 4, 6, 8]
+const even = [2, 4, 6, 8];
 
-tail(even)
+tail(even);
 // => [4, 6, 8]
 ```
 
 As expected, the function returns the tail of `even`, but let's inspect the original array for good measure. It shouldn't have changed, right?
 
 ```js
-even
+even;
 // => [2]
 ```
 
@@ -147,15 +147,15 @@ Some (unfortunately crafted) stateful programs may rely on side-effects like thi
 
 ```js
 function tailPure(arr) {
-  return arr.slice(1)
+  return arr.slice(1);
 }
 
-const prime = [2, 3, 5, 7]
+const prime = [2, 3, 5, 7];
 
-tailPure(prime)
+tailPure(prime);
 // => [3, 5, 7]
 
-prime
+prime;
 // => [2, 3, 5, 7]
 ```
 

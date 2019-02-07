@@ -1,8 +1,8 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Helmet from 'react-helmet';
 
-import 'modern-normalize'
-import './layout.css'
+import 'modern-normalize';
+import './layout.css';
 
 const Layout = ({ children, config }) => {
   return (
@@ -36,7 +36,7 @@ const Layout = ({ children, config }) => {
       </Helmet>
       {children}
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

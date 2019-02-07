@@ -1,6 +1,6 @@
-import { Link } from 'gatsby'
-import React from 'react'
-import logo from './logo.svg'
+import { Link } from 'gatsby';
+import React from 'react';
+import logo from './logo.svg';
 
 export const Header = () => (
   <header>
@@ -10,4 +10,4 @@ export const Header = () => (
       </Link>
     </div>
   </header>
-)
+);

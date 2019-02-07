@@ -1,5 +1,5 @@
-import { always, cond, dec, equals, T } from 'ramda'
-import React from 'react'
+import { always, cond, dec, equals, T } from 'ramda';
+import React from 'react';
 
 const accounts = [
   {
@@ -27,7 +27,7 @@ const accounts = [
     name: 'Twitter',
     username: 'christianhg',
   },
-]
+];
 
 const Account = account => (
   <a
@@ -38,7 +38,7 @@ const Account = account => (
   >
     {account.name} profile
   </a>
-)
+);
 
 export const Accounts = () => (
   <p>
@@ -59,4 +59,4 @@ export const Accounts = () => (
       )}
     .
   </p>
-)
+);

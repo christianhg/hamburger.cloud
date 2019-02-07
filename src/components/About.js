@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export const About = () => (
   <section>
@@ -8,4 +8,4 @@ export const About = () => (
       and the challenges that arise when programming becomes collaborative.
     </p>
   </section>
-)
+);

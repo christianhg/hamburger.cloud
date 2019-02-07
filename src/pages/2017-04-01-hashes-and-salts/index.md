@@ -14,7 +14,7 @@ However, there is still a need for passwords, and a need for us to know, how to 
 **Hashing** refers to the operation of applying a [hash function](https://en.wikipedia.org/wiki/Hash_function) with a key, e.g. a password. The return value of the hash function is an obfuscated version of the key, commonly referred to as the **hash**.
 
 ```js
-hashFunction(key)
+hashFunction(key);
 // => hash
 ```
 
@@ -23,16 +23,16 @@ A hash function takes an input of arbitrary length and returns an output of fixe
 Here is an example of a theoretical hash function that uses the [SHA256](https://en.wikipedia.org/wiki/SHA-2) algorithm to obfuscate its input:
 
 ```js
-sha256HashFunction('short string')
+sha256HashFunction('short string');
 // => 9b5fface991e9154008ca1f446c6ce661197c96ba72329ea98261f8b508b7087
 
-sha256HashFunction('short string')
+sha256HashFunction('short string');
 // => 9b5fface991e9154008ca1f446c6ce661197c96ba72329ea98261f8b508b7087
 
-sha256HashFunction('short string2')
+sha256HashFunction('short string2');
 // => 553f885a886981d23aba4f354c6076639f8fc2ff0e9dfe4881a4c2bb35c0bedc
 
-sha256HashFunction('slightly longer string')
+sha256HashFunction('slightly longer string');
 // => 6de683fb40f37c042cbad165f799228f02bc0eff7eee56a2c9cb30a503cc5e99
 ```
 
@@ -45,7 +45,7 @@ The last bit is very important (hence the bolded text). It's what makes it possi
 It is a common approach to use hashes for file verification. When downloading a file, e.g. a piece of software from a website, the website can provide what is commonly referred to as a **checksum**. A checksum is merely the digital fingerprint of the file. Locally, a new checksum can be calculated for the downloaded file and compared to the checksum provided on the website. If the two checksums match, the file has - probably not - been corrupted:
 
 ```js
-checksumFromWebsite == hashFunction(file)
+checksumFromWebsite == hashFunction(file);
 ```
 
 The "probably not" goes hand in hand with the "in theory" of the prior section. One of the desired properties of a hash function is that it should be **collision resistant**. However, most hash functions don't stand the test of time and are eventually proven not to be.
@@ -65,10 +65,10 @@ The approach described above is better than storing passwords in cleartext, but 
 A salt is a random piece of data used to obfuscate the password even further. The reason rainbow tables work is because a hash function always yields the same output for the same input. Adding some salt to the mix makes the use of these tables impractical because a hash value no longer can be matched to the original input:
 
 ```js
-hashFunction(hashFunction('pass123') + hashFunction(randomSalt))
+hashFunction(hashFunction('pass123') + hashFunction(randomSalt));
 // => hash
 
-hashFunction(hashFunction('pass123') + hashFunction(randomSalt))
+hashFunction(hashFunction('pass123') + hashFunction(randomSalt));
 // => different hash
 ```
 

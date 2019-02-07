@@ -1,7 +1,7 @@
-import React from 'react'
-import { Accounts } from './Accounts'
-import { Src } from './Src'
-import christian from './christian.jpg'
+import React from 'react';
+import { Accounts } from './Accounts';
+import { Src } from './Src';
+import christian from './christian.jpg';
 
 export default () => (
   <footer>
@@ -27,4 +27,4 @@ export default () => (
       <Src />
     </div>
   </footer>
-)
+);

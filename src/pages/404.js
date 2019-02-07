@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-import { Header } from '../components/Header'
+import { Header } from '../components/Header';
 
-const NotFoundPage = () => <Header />
+const NotFoundPage = () => <Header />;
 
-export default NotFoundPage
+export default NotFoundPage;
