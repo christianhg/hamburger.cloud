@@ -42,7 +42,7 @@ const Account = account => (
 
 export const Accounts = () => (
   <p>
-    Christian's only presence includes{' '}
+    Christian's online presence includes{' '}
     {accounts
       .map(Account)
       .reduce(
