@@ -61,9 +61,10 @@ blockquote p {
 }
 
 pre {
-  border: 0.25em solid #772873;
+  border: 0.2em solid #772873;
   border-radius: 0.5em;
   color: #772873;
+  font-size: 0.9em;
   overflow-x: auto;
   padding: 1em;
 }
