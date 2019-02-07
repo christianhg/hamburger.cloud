@@ -90,6 +90,7 @@ a:hover {
 }
 
 img {
+  max-width: 100%;
   vertical-align: text-bottom;
 }
 
@@ -115,8 +116,20 @@ img {
 footer {
   background-color: #f6f6f6;
   font-size: 0.9em;
-  padding-bottom: 2em;
+  font-style: italic;
   padding-top: 2em;
+}
+
+footer .inner {
+  padding-bottom: 2em;
+}
+
+footer .bottom {
+  background-color: #772873;
+  color: #fff;
+  font-size: 0.5em;
+  margin-left: -2em;
+  margin-right: -2em;
 }
 
 .logo {

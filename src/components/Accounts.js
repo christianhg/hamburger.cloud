@@ -4,27 +4,27 @@ import React from 'react'
 const accounts = [
   {
     link: 'https://flickr.com/photos/christianhg',
-    name: 'flickr',
+    name: 'Flickr',
     username: 'christianhg',
   },
   {
     link: 'https://github.com/christianhg',
-    name: 'github',
+    name: 'GitHub',
     username: 'christianhg',
   },
   {
     link: 'https://last.fm/user/christianhg',
-    name: 'last.fm',
+    name: 'Last.fm',
     username: 'christianhg',
   },
   {
     link: 'https://www.linkedin.com/in/christianhg',
-    name: 'linkedin',
+    name: 'LinkedIn',
     username: 'christianhg',
   },
   {
     link: 'https://twitter.com/christianhg',
-    name: 'twitter',
+    name: 'Twitter',
     username: 'christianhg',
   },
 ]
@@ -36,26 +36,27 @@ const Account = account => (
     rel="me"
     title={`${account.name}/${account.username}`}
   >
-    {account.name}
+    {account.name} profile
   </a>
 )
 
 export const Accounts = () => (
   <p>
-    Find Christian elsewhere on{' '}
+    Christian's only presence includes{' '}
     {accounts
       .map(Account)
       .reduce(
         (result, account, index) =>
           cond([
-            [equals(0), always([account])],
+            [equals(0), always(['a ', account])],
             [
               equals(dec(accounts.length)),
-              always([...result, ' or ', account]),
+              always([...result, ' and a ', account]),
             ],
-            [T, always([...result, ', ', account])],
+            [T, always([...result, ', a ', account])],
           ])(index),
         []
       )}
+    .
   </p>
 )
