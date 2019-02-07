@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import 'modern-normalize'
-import 'prismjs/themes/prism.css'
 import './layout.css'
 
 const Layout = ({ children, config }) => {
