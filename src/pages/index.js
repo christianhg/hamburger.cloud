@@ -35,10 +35,12 @@ export default () => (
       >
         <Header />
         <main>
-          <About />
-          <ArticlesList
-            articles={data.allMarkdownRemark.edges.map(nodeToArticle)}
-          />
+          <div className="inner">
+            <About />
+            <ArticlesList
+              articles={data.allMarkdownRemark.edges.map(nodeToArticle)}
+            />
+          </div>
         </main>
         <Footer />
       </Layout>

@@ -4,8 +4,10 @@ import logo from './logo.svg'
 
 export const Header = () => (
   <header>
-    <Link className="logo" to="/">
-      <img src={logo} alt="Christians 'G' logo" />
-    </Link>
+    <div className="inner">
+      <Link className="logo" to="/">
+        <img src={logo} alt="Christians 'G' logo" />
+      </Link>
+    </div>
   </header>
 )

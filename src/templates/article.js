@@ -20,15 +20,17 @@ export default ({ data }) => {
     >
       <Header />
       <main>
-        <h1>{frontmatter.title}</h1>
-        <p>
-          <span className="article-date">{frontmatter.date}</span>
-        </p>
-        {frontmatter.image && (
-          <Img fluid={frontmatter.image.childImageSharp.fluid} />
-        )}
-        <p className="lead">{frontmatter.lead}</p>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div className="inner">
+          <h1>{frontmatter.title}</h1>
+          <p>
+            <span className="article-date">{frontmatter.date}</span>
+          </p>
+          {frontmatter.image && (
+            <Img fluid={frontmatter.image.childImageSharp.fluid} />
+          )}
+          <p className="lead">{frontmatter.lead}</p>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </div>
       </main>
       <Footer />
     </Layout>
