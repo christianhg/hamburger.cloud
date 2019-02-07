@@ -68,6 +68,11 @@ pre {
   padding: 1em;
 }
 
+h1,
+h2 {
+  line-height: 1.25;
+}
+
 h2 code,
 p code {
   background-color: rgb(119, 40, 115, 0.15);
