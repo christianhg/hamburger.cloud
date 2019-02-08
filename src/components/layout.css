@@ -93,6 +93,15 @@ main h2 {
   margin-top: 3rem;
 }
 
+hr {
+  border: 0.075rem solid #772873;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
 figure {
   margin-top: 0;
   margin-left: 0;
