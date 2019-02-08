@@ -2,8 +2,9 @@ import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import React from 'react';
 import { Header } from '../components/Header';
-import Footer from '../components/footer';
+import About from '../components/about';
 import Layout from '../components/layout';
+import { Footer } from '../components/footer';
 
 export default ({ data }) => {
   const { markdownRemark } = data;
@@ -32,6 +33,7 @@ export default ({ data }) => {
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </main>
+      <About />
       <Footer />
     </Layout>
   );

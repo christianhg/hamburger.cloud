@@ -1,10 +1,11 @@
 import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
-import { About } from '../components/About';
+import { Intro } from '../components/intro';
 import { ArticlesList, nodeToArticle } from '../components/ArticlesList';
-import Footer from '../components/footer';
+import About from '../components/about';
 import { Header } from '../components/Header';
 import Layout from '../components/layout';
+import { Footer } from '../components/footer';
 
 export default () => (
   <StaticQuery
@@ -34,14 +35,11 @@ export default () => (
         }}
       >
         <Header />
-        <main>
-          <div className="inner">
-            <About />
-            <ArticlesList
-              articles={data.allMarkdownRemark.edges.map(nodeToArticle)}
-            />
-          </div>
-        </main>
+        <Intro />
+        <ArticlesList
+          articles={data.allMarkdownRemark.edges.map(nodeToArticle)}
+        />
+        <About />
         <Footer />
       </Layout>
     )}
