@@ -60,6 +60,7 @@ blockquote p {
   border-left: 0.25rem dotted #772873;
   font-size: 1.15rem;
   font-style: italic;
+  margin-bottom: 2rem;
   padding-left: 0.75rem;
 }
 
