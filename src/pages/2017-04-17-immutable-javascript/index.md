@@ -159,4 +159,4 @@ prime;
 // => [2, 3, 5, 7]
 ```
 
-Immutability is the backbone of functional programming, but even with new features of ES2015 it's not trivial to achieve in JavaScript. There are even many more pitfalls to be aware of than the ones described above. It is however valuable to learn about immutability. Implementing it's principles even in non-functional codebases can lead to more declarative programs with less unwanted side-effects.
+Immutability is the backbone of functional programming, but even with new features of ES2015 it's not trivial to achieve in JavaScript. There are even many more pitfalls to be aware of than the ones described above. It is however valuable to learn about immutability. Implementing its principles even in non-functional codebases can lead to more declarative programs with less unwanted side-effects.
