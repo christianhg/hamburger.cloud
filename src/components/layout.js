@@ -32,7 +32,20 @@ const Layout = ({ children, config }) => {
           property="og:url"
           content={`https://hamburger.cloud${config.path}`}
         />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@christianhg" />
+        <meta name="twitter:title" content={config.title} />
+        {config.description && (
+          <meta name="twitter:description" content={config.description} />
+        )}
+        {config.image && (
+          <meta
+            property="twitter:image"
+            content={`https://hamburger.cloud${
+              config.image.childImageSharp.resize.src
+            }`}
+          />
+        )}
       </Helmet>
       {children}
     </>
