@@ -9,7 +9,7 @@ const nodeToArticle = ({ node }) => ({
   title: node.frontmatter.title,
 });
 
-export const ArticlesList = () => (
+export const Writings = () => (
   <StaticQuery
     query={graphql`
       query ArticlesListQuery {

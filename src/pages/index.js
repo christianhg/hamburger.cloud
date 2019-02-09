@@ -1,6 +1,6 @@
 import React from 'react';
 import { Intro } from '../components/intro';
-import { ArticlesList } from '../components/ArticlesList';
+import { Writings } from '../components/writings';
 import About from '../components/about';
 import { Header } from '../components/Header';
 import Layout from '../components/layout';
@@ -17,7 +17,7 @@ export default () => (
   >
     <Header />
     <Intro />
-    <ArticlesList />
+    <Writings />
     <About />
     <Footer />
   </Layout>
