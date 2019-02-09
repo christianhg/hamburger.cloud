@@ -5,6 +5,7 @@ import { Header } from '../components/Header';
 import About from '../components/about';
 import Layout from '../components/layout';
 import { Footer } from '../components/footer';
+import { OtherWritings } from '../components/other-writings';
 
 export default ({ data }) => {
   const { markdownRemark } = data;
@@ -35,6 +36,7 @@ export default ({ data }) => {
       </main>
       <About />
       <Footer />
+      <OtherWritings omit={frontmatter.path} />
     </Layout>
   );
 };

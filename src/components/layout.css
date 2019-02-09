@@ -76,6 +76,7 @@ pre {
 
 h1,
 h2,
+h3,
 p {
   margin-bottom: 1rem;
   margin-top: 0;
@@ -156,7 +157,7 @@ img {
 }
 
 .article-date {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   text-transform: uppercase;
 }
 
@@ -173,6 +174,13 @@ img {
   background-color: #f6f6f6;
   font-size: 0.9rem;
   font-style: italic;
+}
+
+#other-writings {
+  background-color: #e5e5e5;
+  font-size: 0.7rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 
 footer {
