@@ -104,10 +104,16 @@ hr {
 }
 
 figure {
+  /* background-color: #fff; */
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+figcaption {
+  font-size: 0.8em;
+  font-style: italic;
 }
 
 h2 code,

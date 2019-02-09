@@ -5,14 +5,18 @@ import christian from './christian.jpg';
 export default () => (
   <section id="about">
     <div className="inner">
+      <p>
+        This website is authored by Christian. His full name is{' '}
+        <strong>Christian Hamburger Grøngaard</strong> (that's right -
+        Hamburger.)
+      </p>
       <figure>
         <img src={christian} alt="Christian at Aurlandsfjellet" />
+        <figcaption>
+          This is Christian on{' '}
+          <a href="https://goo.gl/maps/KkKsVQ9nhNn">Aurlandsfjellet</a>
+        </figcaption>
       </figure>
-      <p>
-        This is Christian on{' '}
-        <a href="https://goo.gl/maps/KkKsVQ9nhNn">Aurlandsfjellet</a>. His full
-        name is <strong>Christian Hamburger Grøngaard</strong>.
-      </p>
       <p>
         Currently he works as a front-end developer at{' '}
         <a href="http://escenic.com">Escenic AS</a> where he fights complexity
