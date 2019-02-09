@@ -174,10 +174,18 @@ footer {
   font-size: 0.7rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
+}
+
+footer .inner {
+  display: grid;
+  grid-template-areas: 'a a';
+}
+
+.misc {
   text-align: right;
 }
 
-footer a {
+.misc a {
   margin-left: 1rem;
 }
 
