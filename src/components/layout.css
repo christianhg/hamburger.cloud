@@ -105,11 +105,12 @@ hr {
 }
 
 figure {
-  /* background-color: #fff; */
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 figcaption {
