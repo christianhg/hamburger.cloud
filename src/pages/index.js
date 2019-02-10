@@ -1,9 +1,9 @@
 import React from 'react';
 import { Intro } from '../components/intro';
 import { Writings } from '../components/writings';
-import About from '../components/about';
+import { About } from '../components/about';
 import { Header } from '../components/Header';
-import Layout from '../components/layout';
+import { Layout } from '../components/layout';
 import { Footer } from '../components/footer';
 
 export default () => (

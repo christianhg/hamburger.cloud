@@ -2,7 +2,7 @@ import React from 'react';
 import { Accounts } from './Accounts';
 import christian from './christian.jpg';
 
-export default () => (
+export const About = () => (
   <section id="about">
     <div className="inner">
       <p>

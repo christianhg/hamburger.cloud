@@ -2,8 +2,8 @@ import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import React from 'react';
 import { Header } from '../components/Header';
-import About from '../components/about';
-import Layout from '../components/layout';
+import { About } from '../components/about';
+import { Layout } from '../components/layout';
 import { Footer } from '../components/footer';
 import { OtherWritings } from '../components/other-writings';
 

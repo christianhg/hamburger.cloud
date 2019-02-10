@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import 'modern-normalize';
 import './layout.css';
 
-const Layout = ({ children, config }) => {
+export const Layout = ({ children, config }) => {
   return (
     <>
       <Helmet>
@@ -51,5 +51,3 @@ const Layout = ({ children, config }) => {
     </>
   );
 };
-
-export default Layout;
