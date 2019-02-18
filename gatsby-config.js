@@ -118,6 +118,7 @@ module.exports = {
           'gatsby-remark-copy-linked-files',
           `gatsby-remark-images`,
           `gatsby-remark-prismjs`,
+          `@raae/gatsby-remark-oembed`,
         ],
       },
     },

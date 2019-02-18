@@ -10,6 +10,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@raae/gatsby-remark-oembed": "^0.0.4",
     "gatsby": "^2.1.0",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-canonical-urls": "^2.0.10",
