@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accounts } from './Accounts';
+import { Accounts } from './accounts';
 import christian from './christian.jpg';
 
 export const About = () => (

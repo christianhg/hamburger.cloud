@@ -1,7 +1,7 @@
 import React from 'react';
 import { About } from '../components/about';
 import { Footer } from '../components/footer';
-import { Header } from '../components/Header';
+import { Header } from '../components/header';
 import { Layout } from '../components/layout';
 import { Writings } from '../components/writings';
 

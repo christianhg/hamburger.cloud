@@ -1,7 +1,7 @@
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import React from 'react';
-import { Header } from '../components/Header';
+import { Header } from '../components/header';
 import { About } from '../components/about';
 import { Layout } from '../components/layout';
 import { Footer } from '../components/footer';

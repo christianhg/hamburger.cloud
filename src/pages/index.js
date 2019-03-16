@@ -2,7 +2,7 @@ import React from 'react';
 import { Intro } from '../components/intro';
 import { Writings } from '../components/writings';
 import { About } from '../components/about';
-import { Header } from '../components/Header';
+import { Header } from '../components/header';
 import { Layout } from '../components/layout';
 import { Footer } from '../components/footer';
 
