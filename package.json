@@ -6,7 +6,8 @@
     "dev": "gatsby develop",
     "dist": "npm run prettier-production && gatsby build && cp googlecfb0a8661b3fb380.html public",
     "prettier": "prettier --write \"{**/*,*}.{md,js,css,yml}\"",
-    "prettier-production": "prettier --list-different \"{**/*,*}.{md,js,css,yml}\""
+    "prettier-production": "prettier --list-different \"{**/*,*}.{md,js,css,yml}\"",
+    "prettier-staged": "pretty-quick --staged --pattern \"{**/*,*}.{md,js,css,yml}\""
   },
   "dependencies": {},
   "devDependencies": {
@@ -27,6 +28,7 @@
     "gatsby-transformer-sharp": "^2.1.13",
     "modern-normalize": "^0.5.0",
     "prettier": "^1.16.4",
+    "pretty-quick": "^1.10.0",
     "prismjs": "^1.15.0",
     "ramda": "^0.26.1",
     "react": "^16.8.1",
