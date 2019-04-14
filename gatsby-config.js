@@ -110,6 +110,7 @@ module.exports = {
         name: 'src',
       },
     },
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
