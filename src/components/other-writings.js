@@ -1,11 +1,10 @@
 import React from 'react';
 import { ArticlesList } from './articles-list';
+import { Section } from './section';
 
 export const OtherWritings = ({ omit }) => (
-  <section id="other-writings">
-    <div className="inner">
-      <h3>Other Writings</h3>
-      <ArticlesList omit={omit} />
-    </div>
-  </section>
+  <Section name="other-writings">
+    <h3>Other Writings</h3>
+    <ArticlesList omit={omit} />
+  </Section>
 );

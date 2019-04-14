@@ -1,11 +1,10 @@
 import React from 'react';
 import { ArticlesList } from './articles-list';
+import { Section } from './section';
 
 export const Writings = () => (
-  <section id="writings">
-    <div className="inner">
-      <h2>Writings</h2>
-      <ArticlesList />
-    </div>
-  </section>
+  <Section name="writings">
+    <h2>Writings</h2>
+    <ArticlesList />
+  </Section>
 );
