@@ -1,6 +1,6 @@
 import React from 'react';
 import { Accounts } from './accounts';
-import christian from './christian.jpg';
+import { Me } from './me';
 import { Section } from './section';
 
 export const About = () => (
@@ -9,13 +9,7 @@ export const About = () => (
       This website is authored by Christian. His full name is{' '}
       <strong>Christian Hamburger Grøngaard</strong> (that's right - Hamburger.)
     </p>
-    <figure>
-      <img src={christian} alt="Christian at Aurlandsfjellet" />
-      <figcaption>
-        This is Christian on{' '}
-        <a href="https://goo.gl/maps/KkKsVQ9nhNn">Aurlandsfjellet</a>
-      </figcaption>
-    </figure>
+    <Me />
     <p>
       Currently he works as a front-end developer at{' '}
       <a href="http://escenic.com">Escenic AS</a> where he fights complexity in
