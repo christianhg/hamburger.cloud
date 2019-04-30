@@ -4,7 +4,6 @@ html {
 
 body {
   background-color: #fff;
-  border-top: 0.25rem solid #772873;
   color: #222222;
   line-height: 1.75;
 }
@@ -13,11 +12,6 @@ body {
   html {
     font-size: 26px;
   }
-}
-
-header,
-main {
-  background-color: #fff;
 }
 
 header,
