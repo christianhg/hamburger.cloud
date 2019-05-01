@@ -7,6 +7,8 @@ import { Frame } from '../components/frame';
 import { Footer } from '../components/footer';
 import { OtherWritings } from '../components/other-writings';
 
+import '../layout/global-styles.css';
+
 export default ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;

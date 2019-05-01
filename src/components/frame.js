@@ -2,7 +2,6 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 import 'modern-normalize';
-import './layout.css';
 
 export const Frame = ({ children, config }) => {
   return (

@@ -5,6 +5,8 @@ import { Header } from '../components/header';
 import { Frame } from '../components/frame';
 import { Writings } from '../components/writings';
 
+import '../layout/global-styles.css';
+
 const NotFoundPage = ({ path }) => (
   <Frame
     config={{

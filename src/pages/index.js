@@ -6,6 +6,8 @@ import { Header } from '../components/header';
 import { Frame } from '../components/frame';
 import { Footer } from '../components/footer';
 
+import '../layout/global-styles.css';
+
 export default () => (
   <Frame
     config={{
