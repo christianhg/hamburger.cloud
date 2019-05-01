@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import { Header } from '../components/header';
 import { About } from '../components/about';
-import { Layout } from '../components/layout';
+import { Frame } from '../components/frame';
 import { Footer } from '../components/footer';
 import { OtherWritings } from '../components/other-writings';
 
@@ -12,7 +12,7 @@ export default ({ data }) => {
   const { frontmatter, html } = markdownRemark;
 
   return (
-    <Layout
+    <Frame
       config={{
         title: frontmatter.title,
         description: frontmatter.lead,
@@ -37,7 +37,7 @@ export default ({ data }) => {
       <About />
       <Footer />
       <OtherWritings omit={frontmatter.path} />
-    </Layout>
+    </Frame>
   );
 };
 

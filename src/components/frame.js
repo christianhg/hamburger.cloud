@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import 'modern-normalize';
 import './layout.css';
 
-export const Layout = ({ children, config }) => {
+export const Frame = ({ children, config }) => {
   return (
     <>
       <Helmet>

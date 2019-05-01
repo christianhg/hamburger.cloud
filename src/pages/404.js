@@ -2,11 +2,11 @@ import React from 'react';
 import { About } from '../components/about';
 import { Footer } from '../components/footer';
 import { Header } from '../components/header';
-import { Layout } from '../components/layout';
+import { Frame } from '../components/frame';
 import { Writings } from '../components/writings';
 
 const NotFoundPage = ({ path }) => (
-  <Layout
+  <Frame
     config={{
       title: 'Personal website of Christian Hamburger Grøngaard',
       description: 'Personal website of Christian Hamburger Grøngaard',
@@ -28,7 +28,7 @@ const NotFoundPage = ({ path }) => (
     <Writings />
     <About />
     <Footer />
-  </Layout>
+  </Frame>
 );
 
 export default NotFoundPage;

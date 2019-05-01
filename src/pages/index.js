@@ -3,11 +3,11 @@ import { Intro } from '../components/intro';
 import { Writings } from '../components/writings';
 import { About } from '../components/about';
 import { Header } from '../components/header';
-import { Layout } from '../components/layout';
+import { Frame } from '../components/frame';
 import { Footer } from '../components/footer';
 
 export default () => (
-  <Layout
+  <Frame
     config={{
       title: 'Personal website of Christian Hamburger Grøngaard',
       description: 'Personal website of Christian Hamburger Grøngaard',
@@ -20,5 +20,5 @@ export default () => (
     <Writings />
     <About />
     <Footer />
-  </Layout>
+  </Frame>
 );
