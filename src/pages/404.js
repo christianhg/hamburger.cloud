@@ -4,8 +4,7 @@ import { Footer } from '../components/footer';
 import { Header } from '../components/header';
 import { Frame } from '../components/frame';
 import { Writings } from '../components/writings';
-
-import '../layout/global-styles.css';
+import { GlobalStyles } from '../components/global-styles';
 
 const NotFoundPage = ({ path }) => (
   <Frame
@@ -16,20 +15,24 @@ const NotFoundPage = ({ path }) => (
       path,
     }}
   >
-    <Header />
-    <section id="fourofour">
-      <div className="inner">
-        <h1>Sorry, there's nothing here.</h1>
-        <p>
-          The page you are trying to access doesn't exist or might have been
-          moved.
-        </p>
-        <p>Please have a look below to see if you find what you are seeking.</p>
-      </div>
-    </section>
-    <Writings />
-    <About />
-    <Footer />
+    <GlobalStyles>
+      <Header />
+      <section id="fourofour">
+        <div className="inner">
+          <h1>Sorry, there's nothing here.</h1>
+          <p>
+            The page you are trying to access doesn't exist or might have been
+            moved.
+          </p>
+          <p>
+            Please have a look below to see if you find what you are seeking.
+          </p>
+        </div>
+      </section>
+      <Writings />
+      <About />
+      <Footer />
+    </GlobalStyles>
   </Frame>
 );
 

@@ -6,8 +6,7 @@ import { About } from '../components/about';
 import { Frame } from '../components/frame';
 import { Footer } from '../components/footer';
 import { OtherWritings } from '../components/other-writings';
-
-import '../layout/global-styles.css';
+import { GlobalStyles } from '../components/global-styles';
 
 export default ({ data }) => {
   const { markdownRemark } = data;
@@ -22,23 +21,25 @@ export default ({ data }) => {
         path: frontmatter.path,
       }}
     >
-      <Header />
-      <main>
-        <div className="inner">
-          <h1>{frontmatter.title}</h1>
-          <p>
-            <span className="article-date">{frontmatter.date}</span>
-          </p>
-          {frontmatter.image && (
-            <Img fluid={frontmatter.image.childImageSharp.fluid} />
-          )}
-          <p className="lead">{frontmatter.lead}</p>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
-        </div>
-      </main>
-      <About />
-      <Footer />
-      <OtherWritings omit={frontmatter.path} />
+      <GlobalStyles>
+        <Header />
+        <main>
+          <div className="inner">
+            <h1>{frontmatter.title}</h1>
+            <p>
+              <span className="article-date">{frontmatter.date}</span>
+            </p>
+            {frontmatter.image && (
+              <Img fluid={frontmatter.image.childImageSharp.fluid} />
+            )}
+            <p className="lead">{frontmatter.lead}</p>
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+          </div>
+        </main>
+        <About />
+        <Footer />
+        <OtherWritings omit={frontmatter.path} />
+      </GlobalStyles>
     </Frame>
   );
 };

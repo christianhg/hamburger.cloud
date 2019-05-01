@@ -5,8 +5,7 @@ import { About } from '../components/about';
 import { Header } from '../components/header';
 import { Frame } from '../components/frame';
 import { Footer } from '../components/footer';
-
-import '../layout/global-styles.css';
+import { GlobalStyles } from '../components/global-styles';
 
 export default () => (
   <Frame
@@ -17,10 +16,12 @@ export default () => (
       path: '/',
     }}
   >
-    <Header />
-    <Intro />
-    <Writings />
-    <About />
-    <Footer />
+    <GlobalStyles>
+      <Header />
+      <Intro />
+      <Writings />
+      <About />
+      <Footer />
+    </GlobalStyles>
   </Frame>
 );
