@@ -199,12 +199,6 @@ footer .inner {
   margin-left: 1rem;
 }
 
-.logo {
-  display: block;
-  margin-bottom: 1rem;
-  width: 50px;
-}
-
 .gatsby-highlight-code-line {
   background: rgb(119, 40, 115, 0.15);
   display: block;

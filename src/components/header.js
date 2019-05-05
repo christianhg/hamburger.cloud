@@ -10,7 +10,7 @@ const HeaderInner = styled.header`
 export const Header = () => (
   <HeaderInner>
     <div className="inner">
-      <Link className="logo" to="/">
+      <Link to="/">
         <Logo />
       </Link>
     </div>
