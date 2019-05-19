@@ -115,6 +115,15 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `@raae/gatsby-remark-oembed`,
+            options: {
+              usePrefix: true,
+              providers: {
+                include: ['YouTube'],
+              },
+            },
+          },
           `gatsby-plugin-sharp`,
           'gatsby-remark-copy-linked-files',
           `gatsby-remark-images`,

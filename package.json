@@ -11,6 +11,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@raae/gatsby-remark-oembed": "^0.0.6",
     "babel-plugin-styled-components": "^1.10.0",
     "date-fns": "^1.30.1",
     "gatsby": "^2.4.2",
