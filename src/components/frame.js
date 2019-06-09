@@ -17,9 +17,7 @@ export const Frame = ({ children, config }) => {
         {config.image && (
           <meta
             property="og:image"
-            content={`https://hamburger.cloud${
-              config.image.childImageSharp.resize.src
-            }`}
+            content={`https://hamburger.cloud${config.image.childImageSharp.resize.src}`}
           />
         )}
         {config.keywords && (
@@ -38,9 +36,7 @@ export const Frame = ({ children, config }) => {
         {config.image && (
           <meta
             property="twitter:image"
-            content={`https://hamburger.cloud${
-              config.image.childImageSharp.resize.src
-            }`}
+            content={`https://hamburger.cloud${config.image.childImageSharp.resize.src}`}
           />
         )}
       </Helmet>
