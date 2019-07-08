@@ -28,6 +28,10 @@ const Position = ({ id, title, company, start, end }) => (
   </li>
 );
 
+const age = Math.floor(
+  (new Date().getTime() - new Date('September 5, 1987').getTime()) / 3.154e10
+);
+
 export default () => {
   return (
     <Frame
@@ -61,17 +65,15 @@ export default () => {
             <h2>Hi, I'm Christian!</h2>
             <p>
               I’m a passionate programmer, highly interested in the craft of
-              programming and the challenges that arise when programming becomes
-              collaborative.
+              programming and creating simpler programs.
             </p>
             <p>
-              I’m a 31-year-old Dane living in Oslo with my family. I work as a
-              front-end developer at{' '}
+              I’m a {age}-year-old Dane working as a front-end developer at{' '}
               <a href="http://www.escenic.com/">Escenic AS</a> where I have a
               prominent role in planning out and developing{' '}
               <a href="http://www.escenic.com/solutions/cue">CUE</a>: a flexible
               and extendable CMS for newsrooms. Currently I’m involved in the
-              JavaScript development of a{' '}
+              development of a{' '}
               <a href="http://www.escenic.com/solutions/content-store">
                 completely new content creation workflow
               </a>{' '}
@@ -79,7 +81,10 @@ export default () => {
               <a href="https://wordpress.org/gutenberg/">
                 WordPress Gutenberg editor
               </a>
-              . I want to believe that I’m being provided with autonomy and
+              .
+            </p>
+            <p>
+              I want to believe that I’m being provided with autonomy and
               responsibility because I’m a person who deeply cares about the
               product and its creation. A person who isn’t afraid to ask why
               something works the way it works or why a particular feature is
@@ -88,9 +93,19 @@ export default () => {
             <p>
               When I’m not engaged in providing the best possible user
               experience both through APIs and user interfaces, I’m usually
-              invested in our team of ~20 front-end developers: endorsing
+              invested in our team of ~20 front-end developers. Endorsing
               knowledge-sharing, trying out new tools and techniques as well as
               improving our development environment comes naturally to me.
+            </p>
+            <p>
+              I've been developing for the Web on and off since the early 2000s,
+              got a good eye for design and UX and used to pursue a more
+              design-oriented career.
+            </p>
+            <p>
+              In my spare time I enjoy singing and playing the guitar, hiking
+              and skiing as well as spending time with my family in the
+              wonderful city of Oslo, Norway.
             </p>
           </Subsection>
           <Subsection name="pe">
