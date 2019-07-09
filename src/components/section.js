@@ -1,7 +1,8 @@
 import React from 'react';
+import { Inner, StyledSection } from './styles';
 
 export const Section = ({ children, name }) => (
-  <section id={name}>
-    <div className="inner">{children}</div>
-  </section>
+  <StyledSection id={name}>
+    <Inner>{children}</Inner>
+  </StyledSection>
 );

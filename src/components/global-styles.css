@@ -14,26 +14,6 @@ body {
   }
 }
 
-header,
-footer,
-main,
-section {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-header,
-main,
-section {
-  padding-bottom: 2rem;
-  padding-top: 3rem;
-}
-
-.inner {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 blockquote {
   background-color: rgb(119, 40, 115, 0.15);
   border-left: 0.25rem solid #772873;
@@ -48,14 +28,6 @@ blockquote {
 
 blockquote p {
   margin-bottom: 0;
-}
-
-.lead {
-  border-left: 0.25rem dotted #772873;
-  font-size: 1.15rem;
-  font-style: italic;
-  margin-bottom: 2rem;
-  padding-left: 0.75rem;
 }
 
 pre {
@@ -81,14 +53,6 @@ h2 {
   line-height: 1.25;
 }
 
-section h1 {
-  font-size: 2rem;
-}
-
-main h2 {
-  margin-top: 3rem;
-}
-
 hr {
   border: 0.075rem solid #772873;
   border-radius: 1rem;
@@ -96,20 +60,6 @@ hr {
   margin-left: 2rem;
   margin-right: 2rem;
   margin-top: 2rem;
-}
-
-figure {
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 1rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-figcaption {
-  font-size: 0.8em;
-  font-style: italic;
 }
 
 h2 code,
@@ -151,11 +101,6 @@ img {
   margin-bottom: 1rem;
 }
 
-.article-date {
-  font-size: 0.8em;
-  text-transform: uppercase;
-}
-
 .flip-vertically {
   display: inline-flex;
   flex-direction: column-reverse;
@@ -177,26 +122,6 @@ img {
   font-size: 0.7rem;
   padding-bottom: 1rem;
   padding-top: 2rem;
-}
-
-footer {
-  background-color: #eee;
-  font-size: 0.7rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-}
-
-footer .inner {
-  display: grid;
-  grid-template-areas: 'a a';
-}
-
-.misc {
-  text-align: right;
-}
-
-.misc a {
-  margin-left: 1rem;
 }
 
 .gatsby-highlight-code-line {

@@ -1,12 +1,27 @@
-import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import React from 'react';
-import { Header } from '../components/header';
+import styled from 'styled-components';
 import { About } from '../components/about';
-import { Frame } from '../components/frame';
 import { Footer } from '../components/footer';
-import { OtherWritings } from '../components/other-writings';
+import { Frame } from '../components/frame';
 import { GlobalStyles } from '../components/global-styles';
+import { Header } from '../components/header';
+import { OtherWritings } from '../components/other-writings';
+import { Inner, StyledMain } from '../components/styles';
+
+const Lead = styled.p`
+  border-left: 0.25rem dotted #772873;
+  font-size: 1.15rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  padding-left: 0.75rem;
+`;
+
+const Date = styled.p`
+  font-size: 0.8em;
+  text-transform: uppercase;
+`;
 
 export default ({ data }) => {
   const { markdownRemark } = data;
@@ -23,19 +38,17 @@ export default ({ data }) => {
     >
       <GlobalStyles>
         <Header />
-        <main>
-          <div className="inner">
+        <StyledMain>
+          <Inner>
             <h1>{frontmatter.title}</h1>
-            <p>
-              <span className="article-date">{frontmatter.date}</span>
-            </p>
+            <Date>{frontmatter.date}</Date>
             {frontmatter.image && (
               <Img fluid={frontmatter.image.childImageSharp.fluid} />
             )}
-            <p className="lead">{frontmatter.lead}</p>
+            <Lead>{frontmatter.lead}</Lead>
             <div dangerouslySetInnerHTML={{ __html: html }} />
-          </div>
-        </main>
+          </Inner>
+        </StyledMain>
         <About />
         <Footer />
         <OtherWritings omit={frontmatter.path} />

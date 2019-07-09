@@ -1,17 +1,27 @@
 import React from 'react';
+import styled from 'styled-components';
+import { StyledFooter, Inner } from './styles';
+
+const Misc = styled.span`
+  text-align: right;
+
+  a {
+    margin-left: 1rem;
+  }
+`;
 
 export const Footer = () => (
-  <footer>
-    <div className="inner">
-      <span className="copyright">
+  <StyledFooter>
+    <Inner>
+      <span>
         Copyright © {new Date().getFullYear()} Christian Hamburger Grøngaard
       </span>
-      <span className="misc">
+      <Misc>
         <a href="https://github.com/christianhg/hamburger.cloud">
           {'{'}src{'}'}
         </a>
         <a href="/rss.xml">RSS</a>
-      </span>
-    </div>
-  </footer>
+      </Misc>
+    </Inner>
+  </StyledFooter>
 );
