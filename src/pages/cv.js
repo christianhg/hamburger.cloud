@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Frame } from '../components/frame';
-import { Header } from '../components/header';
 import { GlobalStyles } from '../components/global-styles';
 import { Section } from '../components/section';
-
 import { positions } from '../data/positions';
 
 const H1 = styled.h1`
@@ -43,7 +41,6 @@ export default () => {
       }}
     >
       <GlobalStyles>
-        <Header />
         <Section name="cv">
           <H1>
             Christian Hamburger Grøngaard<span>Front-End Developer</span>
