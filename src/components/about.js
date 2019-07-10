@@ -1,10 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Accounts } from './accounts';
 import { Me } from './me';
 import { Section } from './section';
 
+const AboutSection = styled(Section)`
+  background-color: #f6f6f6;
+  font-size: 0.9rem;
+  font-style: italic;
+`;
+
 export const About = () => (
-  <Section name="about">
+  <AboutSection>
     <p>
       This website is authored by Christian. His full name is{' '}
       <strong>Christian Hamburger Grøngaard</strong> (that's right - Hamburger.)
@@ -23,5 +30,5 @@ export const About = () => (
       wonderful city of Oslo, Norway.
     </p>
     <Accounts />
-  </Section>
+  </AboutSection>
 );
