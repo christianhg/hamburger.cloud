@@ -5,6 +5,10 @@ import { GlobalStyles } from '../components/global-styles';
 import { Section } from '../components/section';
 import { positions } from '../data/positions';
 
+const Header = styled.header`
+  margin-bottom: 2rem;
+`;
+
 const H1 = styled.h1`
   span {
     display: block;
@@ -12,9 +16,9 @@ const H1 = styled.h1`
   }
 `;
 
-const Subsection = ({ children, name }) => (
-  <div className={`subsection=${name}`}>{children}</div>
-);
+const Subsection = styled.div`
+  margin-bottom: 2rem;
+`;
 
 const Position = ({ id, title, company, start, end }) => (
   <li key={id}>
@@ -42,11 +46,13 @@ export default () => {
     >
       <GlobalStyles>
         <Section name="cv">
-          <H1>
-            Christian Hamburger Grøngaard<span>Front-End Developer</span>
-          </H1>
-          <h2>CV</h2>
-          <Subsection name="contact">
+          <Header>
+            <H1>
+              Christian Hamburger Grøngaard<span>Front-End Developer</span>
+            </H1>
+            <h2>CV</h2>
+          </Header>
+          <Subsection>
             <h2>Contact</h2>
             <p>
               Glückstads Gate 5A, 0170 Oslo
@@ -58,7 +64,7 @@ export default () => {
               <a href="https://hamburger.cloud">hamburger.cloud</a>
             </p>
           </Subsection>
-          <Subsection name="intro">
+          <Subsection>
             <h2>Hi, I'm Christian!</h2>
             <p>
               I’m a passionate programmer, highly interested in the craft of
@@ -105,7 +111,7 @@ export default () => {
               wonderful city of Oslo, Norway.
             </p>
           </Subsection>
-          <Subsection name="pe">
+          <Subsection>
             <h2>Professional Experience</h2>
             <ol>{positions.map(Position)}</ol>
           </Subsection>
