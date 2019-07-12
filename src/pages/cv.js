@@ -245,6 +245,13 @@ export default () => {
               <br />
               <a href="https://hamburger.cloud">hamburger.cloud</a>
             </p>
+            <p>
+              <a href="https://github.com/christianhg">GitHub</a>
+              <br />
+              <a href="https://linkedin.com/in/christianhg">LinkedIn</a>
+              <br />
+              <a href="https://twitter.com/christianhg">Twitter</a>
+            </p>
           </Footer>
         </StyledCV>
         <Bottom>
