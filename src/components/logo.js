@@ -6,6 +6,7 @@ import logo from './logo.svg';
 const StyledLogo = styled.div`
   margin-bottom: 1rem;
   max-width: ${props => props.width};
+  user-select: none;
 `;
 
 export const Logo = ({ width }) => (

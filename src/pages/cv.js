@@ -56,6 +56,7 @@ const StyledCV = styled(Section)`
   h2 {
     font-size: 1em;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
 
     @media screen {
       color: ${darkYellow};
@@ -64,9 +65,10 @@ const StyledCV = styled(Section)`
 `;
 
 const Top = styled.div`
+  height: 0.5rem;
   overflow: hidden;
   position: relative;
-  height: 0.5rem;
+  user-select: none;
 
   @media print {
     display: none;
