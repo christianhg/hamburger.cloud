@@ -77,7 +77,7 @@ const Top = styled.div`
     display: block;
     max-width: none;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -85,6 +85,10 @@ const Top = styled.div`
 
 const Bottom = styled(Top)`
   height: 6rem;
+
+  img {
+    top: 0;
+  }
 `;
 
 const StyledOl = styled.ol`
