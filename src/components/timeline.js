@@ -5,7 +5,7 @@ const TimelineWrapper = styled.ol`
   padding-left: 1rem;
   position: relative;
   &:before {
-    background-color: #772873;
+    background-color: ${props => props.backgroundColor};
     border-radius: 0.5rem;
     content: '';
     display: block;
@@ -23,7 +23,7 @@ const TimelineEvent = styled.li`
   padding-top: 1rem;
   position: relative;
   &:before {
-    background-color: #772873;
+    background-color: ${props => props.backgroundColor};
     border-radius: 50%;
     content: '';
     display: block;
@@ -36,7 +36,7 @@ const TimelineEvent = styled.li`
 `;
 
 const TimelineDate = styled.span`
-  background-color: #772873;
+  background-color: ${props => props.backgroundColor};
   border-radius: 0.15rem;
   color: #fff;
   display: inline-block;
@@ -46,7 +46,8 @@ const TimelineDate = styled.span`
   &:before {
     border-style: solid;
     border-width: 0.5rem 0.5rem 0.5rem 0;
-    border-color: transparent #772873 transparent transparent;
+    border-color: transparent ${props => props.backgroundColor} transparent
+      transparent;
     content: '';
     display: block;
     height: 0;
@@ -62,11 +63,13 @@ const TimelineTitle = styled.span`
   display: block;
 `;
 
-export const Timeline = ({ events }) => (
-  <TimelineWrapper>
+export const Timeline = ({ backgroundColor, color, events }) => (
+  <TimelineWrapper backgroundColor={backgroundColor} color={color}>
     {events.map(event => (
-      <TimelineEvent key={event.id}>
-        <TimelineDate>{event.date}</TimelineDate>
+      <TimelineEvent backgroundColor={backgroundColor} key={event.id}>
+        <TimelineDate backgroundColor={backgroundColor}>
+          {event.date}
+        </TimelineDate>
         <TimelineTitle>{event.title}</TimelineTitle>
       </TimelineEvent>
     ))}

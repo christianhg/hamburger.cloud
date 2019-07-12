@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const StyledDate = styled.p`
+  font-size: 0.8em;
+  text-transform: uppercase;
+`;
+
 export const StyledFigure = styled.figure`
   margin-top: 0;
   margin-left: 0;

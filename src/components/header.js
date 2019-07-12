@@ -7,7 +7,7 @@ export const Header = () => (
   <StyledHeader>
     <Inner>
       <Link to="/">
-        <Logo />
+        <Logo width="3rem" />
       </Link>
     </Inner>
   </StyledHeader>

@@ -1,33 +1,121 @@
 import React from 'react';
 import styled from 'styled-components';
+import { darken } from 'polished';
 import { Frame } from '../components/frame';
 import { GlobalStyles } from '../components/global-styles';
 import { Section } from '../components/section';
 import { positions } from '../data/positions';
+import { education } from '../data/education';
+import { StyledDate } from '../components/styles';
+import { Logo } from '../components/logo';
+import { Link } from 'gatsby';
+
+const yellow = '#f2e205';
+const darkYellow = darken(0.2, yellow);
+
+const black = '#222222';
 
 const Header = styled.header`
+  display: inline-flex;
+  flex-direction: column-reverse;
   margin-bottom: 2rem;
-`;
 
-const H1 = styled.h1`
-  span {
-    display: block;
-    font-size: 0.8em;
+  h1 {
+    span {
+      display: block;
+      font-size: 0.8em;
+    }
   }
 `;
 
 const Subsection = styled.div`
   margin-bottom: 2rem;
+
+  @media screen {
+    margin-bottom: 3rem;
+  }
 `;
 
-const Position = ({ id, title, company, start, end }) => (
-  <li key={id}>
-    <strong>{title}</strong>
-    <br />
-    {company}
-    <br />
-    {start} – {end ? end : 'Present'}
-  </li>
+const Footer = styled(Subsection)`
+  font-size: 0.8em;
+`;
+
+const StyledCV = styled(Section)`
+  background-color: ${yellow};
+
+  a {
+    text-decoration-color: ${darkYellow};
+    color: ${black};
+
+    @media print {
+      text-decoration: none;
+    }
+  }
+
+  h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+
+    @media screen {
+      color: ${darkYellow};
+    }
+  }
+`;
+
+const StyledOl = styled.ol`
+  list-style: disc;
+
+  @media screen {
+    list-style: none;
+    padding-left: 0;
+  }
+`;
+
+const StyledLi = styled.li`
+  margin-bottom: 1rem;
+
+  @media screen {
+    position: relative;
+
+    &:before {
+      background-color: ${darkYellow};
+      content: '';
+      display: block;
+      left: -1rem;
+      position: absolute;
+      height: 100%;
+      width: 0.1rem;
+    }
+  }
+`;
+
+const Place = styled.p`
+  font-size: 0.8em;
+  margin-bottom: 0;
+`;
+
+const Title = styled.p`
+  margin-bottom: 0;
+`;
+
+const Position = ({ id, title, company, link, start, end }) => (
+  <StyledLi key={id}>
+    <Title>{title}</Title>
+    <Place>{link ? <a href={link}>{company}</a> : company}</Place>
+    <StyledDate>
+      {start} – {end ? end : 'Present'}
+    </StyledDate>
+  </StyledLi>
+);
+
+const Education = ({ id, title, place, start, end }) => (
+  <StyledLi key={id}>
+    <Title>{title}</Title>
+    <Place>{place}</Place>
+    <StyledDate>
+      {start} – {end ? end : 'Present'}
+    </StyledDate>
+  </StyledLi>
 );
 
 const age = Math.floor(
@@ -45,31 +133,25 @@ export default () => {
       }}
     >
       <GlobalStyles>
-        <Section name="cv">
+        <StyledCV>
           <Header>
-            <H1>
+            <h1>
               Christian Hamburger Grøngaard<span>Front-End Developer</span>
-            </H1>
+            </h1>
             <h2>CV</h2>
           </Header>
           <Subsection>
-            <h2>Contact</h2>
+            <h2>Introduction</h2>
             <p>
-              Glückstads Gate 5A, 0170 Oslo
-              <br />
-              <a href="tel:90090642">900 90 642</a>
-              <br />
-              <a href="mailto:christianhg@gmail.com">christianhg@gmail.com</a>
-              <br />
-              <a href="https://hamburger.cloud">hamburger.cloud</a>
+              Hi, I'm Christian! I’m a passionate programmer, highly interested
+              in the craft of programming and creating simpler programs. I've
+              been developing for the Web on and off since the early 2000s, got
+              a good eye for design and UX and used to pursue a more
+              design-oriented career.
             </p>
           </Subsection>
           <Subsection>
-            <h2>Hi, I'm Christian!</h2>
-            <p>
-              I’m a passionate programmer, highly interested in the craft of
-              programming and creating simpler programs.
-            </p>
+            <h2>On the job</h2>
             <p>
               I’m a {age}-year-old Dane working as a front-end developer at{' '}
               <a href="http://www.escenic.com/">Escenic AS</a> where I have a
@@ -100,11 +182,9 @@ export default () => {
               knowledge-sharing, trying out new tools and techniques as well as
               improving our development environment comes naturally to me.
             </p>
-            <p>
-              I've been developing for the Web on and off since the early 2000s,
-              got a good eye for design and UX and used to pursue a more
-              design-oriented career.
-            </p>
+          </Subsection>
+          <Subsection>
+            <h2>At home</h2>
             <p>
               In my spare time I enjoy singing and playing the guitar, hiking
               and skiing as well as spending time with my family in the
@@ -113,9 +193,31 @@ export default () => {
           </Subsection>
           <Subsection>
             <h2>Professional Experience</h2>
-            <ol>{positions.map(Position)}</ol>
+            <StyledOl>{positions.map(Position)}</StyledOl>
           </Subsection>
-        </Section>
+          <Subsection>
+            <h2>Education</h2>
+            <StyledOl>{education.map(Education)}</StyledOl>
+          </Subsection>
+          <Subsection>
+            <Link to="/">
+              <Logo width="2rem" />
+            </Link>
+          </Subsection>
+          <Footer>
+            <p>
+              Christian Hamburger Grøngaard
+              <br />
+              Glückstads Gate 5A, 0170 Oslo
+              <br />
+              <a href="tel:90090642">900 90 642</a>
+              <br />
+              <a href="mailto:christianhg@gmail.com">christianhg@gmail.com</a>
+              <br />
+              <a href="https://hamburger.cloud">hamburger.cloud</a>
+            </p>
+          </Footer>
+        </StyledCV>
       </GlobalStyles>
     </Frame>
   );

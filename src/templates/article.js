@@ -8,7 +8,7 @@ import { Frame } from '../components/frame';
 import { GlobalStyles } from '../components/global-styles';
 import { Header } from '../components/header';
 import { OtherWritings } from '../components/other-writings';
-import { Inner, StyledMain } from '../components/styles';
+import { Inner, StyledMain, StyledDate } from '../components/styles';
 
 const Lead = styled.p`
   border-left: 0.25rem dotted #772873;
@@ -16,11 +16,6 @@ const Lead = styled.p`
   font-style: italic;
   margin-bottom: 2rem;
   padding-left: 0.75rem;
-`;
-
-const Date = styled.p`
-  font-size: 0.8em;
-  text-transform: uppercase;
 `;
 
 export default ({ data }) => {
@@ -41,7 +36,7 @@ export default ({ data }) => {
         <StyledMain>
           <Inner>
             <h1>{frontmatter.title}</h1>
-            <Date>{frontmatter.date}</Date>
+            <StyledDate>{frontmatter.date}</StyledDate>
             {frontmatter.image && (
               <Img fluid={frontmatter.image.childImageSharp.fluid} />
             )}

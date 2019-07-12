@@ -3,13 +3,13 @@ import React from 'react';
 
 import logo from './logo.svg';
 
-const LogoInner = styled.div`
+const StyledLogo = styled.div`
   margin-bottom: 1rem;
-  max-width: 3rem;
+  max-width: ${props => props.width};
 `;
 
-export const Logo = () => (
-  <LogoInner>
+export const Logo = ({ width }) => (
+  <StyledLogo width={width}>
     <img src={logo} alt="Christians 'G' logo" />
-  </LogoInner>
+  </StyledLogo>
 );
