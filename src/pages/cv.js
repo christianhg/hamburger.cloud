@@ -9,8 +9,8 @@ import { education } from '../data/education';
 import { StyledDate } from '../components/styles';
 import { Logo } from '../components/logo';
 import { Link } from 'gatsby';
-import croppedBeachA from './cropped-beach-a.png';
-import croppedBeachB from './cropped-beach-b.png';
+import croppedBeachA from './cropped-beach-a.jpg';
+import croppedBeachB from './cropped-beach-b.jpg';
 
 const yellow = '#f2e205';
 const darkYellow = darken(0.2, yellow);
