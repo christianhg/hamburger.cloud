@@ -9,6 +9,8 @@ import { education } from '../data/education';
 import { StyledDate } from '../components/styles';
 import { Logo } from '../components/logo';
 import { Link } from 'gatsby';
+import croppedBeachA from './cropped-beach-a.png';
+import croppedBeachB from './cropped-beach-b.png';
 
 const yellow = '#f2e205';
 const darkYellow = darken(0.2, yellow);
@@ -60,6 +62,25 @@ const StyledCV = styled(Section)`
       color: ${darkYellow};
     }
   }
+`;
+
+const Top = styled.div`
+  overflow: hidden;
+  position: relative;
+  height: 0.5rem;
+
+  img {
+    display: block;
+    max-width: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+`;
+
+const Bottom = styled(Top)`
+  height: 6rem;
 `;
 
 const StyledOl = styled.ol`
@@ -133,6 +154,9 @@ export default () => {
       }}
     >
       <GlobalStyles>
+        <Top>
+          <img src={croppedBeachA} alt="Port Douglas, Queensland" />
+        </Top>
         <StyledCV>
           <Header>
             <h1>
@@ -218,6 +242,9 @@ export default () => {
             </p>
           </Footer>
         </StyledCV>
+        <Bottom>
+          <img src={croppedBeachB} alt="Port Douglas, Queensland" />
+        </Bottom>
       </GlobalStyles>
     </Frame>
   );
