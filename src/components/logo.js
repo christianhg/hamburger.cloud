@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import { Link } from 'gatsby';
 import React from 'react';
-
+import styled from 'styled-components';
 import logo from './logo.svg';
 
 const StyledLogo = styled.div`
@@ -10,6 +10,8 @@ const StyledLogo = styled.div`
 
 export const Logo = ({ width }) => (
   <StyledLogo width={width}>
-    <img src={logo} alt="Christians 'G' logo" />
+    <Link to="./">
+      <img src={logo} alt="Christians 'G' logo" />
+    </Link>
   </StyledLogo>
 );

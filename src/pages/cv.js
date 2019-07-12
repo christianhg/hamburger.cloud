@@ -1,14 +1,13 @@
+import { darken } from 'polished';
 import React from 'react';
 import styled from 'styled-components';
-import { darken } from 'polished';
 import { Frame } from '../components/frame';
 import { GlobalStyles } from '../components/global-styles';
-import { Section } from '../components/section';
-import { positions } from '../data/positions';
-import { education } from '../data/education';
-import { StyledDate } from '../components/styles';
 import { Logo } from '../components/logo';
-import { Link } from 'gatsby';
+import { Section } from '../components/section';
+import { StyledDate } from '../components/styles';
+import { education } from '../data/education';
+import { positions } from '../data/positions';
 import croppedBeachA from './cropped-beach-a.jpg';
 import croppedBeachB from './cropped-beach-b.jpg';
 
@@ -232,9 +231,7 @@ export default () => {
             <StyledOl>{education.map(Education)}</StyledOl>
           </Subsection>
           <Subsection>
-            <Link to="/">
-              <Logo width="2rem" />
-            </Link>
+            <Logo width="2rem" />
           </Subsection>
           <Footer>
             <p>

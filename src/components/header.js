@@ -1,14 +1,11 @@
-import { Link } from 'gatsby';
 import React from 'react';
 import { Logo } from './logo';
-import { StyledHeader, Inner } from './styles';
+import { Inner, StyledHeader } from './styles';
 
 export const Header = () => (
   <StyledHeader>
     <Inner>
-      <Link to="/">
-        <Logo width="3rem" />
-      </Link>
+      <Logo width="3rem" />
     </Inner>
   </StyledHeader>
 );
