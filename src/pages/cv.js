@@ -69,6 +69,10 @@ const Top = styled.div`
   position: relative;
   height: 0.5rem;
 
+  @media print {
+    display: none;
+  }
+
   img {
     display: block;
     max-width: none;
