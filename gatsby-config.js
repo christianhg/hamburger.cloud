@@ -102,6 +102,12 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        policy: [{ userAgent: '*', disallow: '/cv/' }],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src`,

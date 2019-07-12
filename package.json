@@ -9,7 +9,9 @@
     "prettier-production": "prettier --list-different \"{**/*,*}.{md,js,json,css,yml}\"",
     "prettier-staged": "pretty-quick --staged --pattern \"{**/*,*}.{md,js,json,css,yml}\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "gatsby-plugin-robots-txt": "^1.5.0"
+  },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "date-fns": "^1.30.1",
