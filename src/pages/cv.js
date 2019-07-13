@@ -8,8 +8,7 @@ import { Section } from '../components/section';
 import { StyledDate } from '../components/styles';
 import { education } from '../data/education';
 import { positions } from '../data/positions';
-import croppedBeachA from './cropped-beach-a.jpg';
-import croppedBeachB from './cropped-beach-b.jpg';
+import croppedBeach from './cropped-beach.jpg';
 
 const yellow = '#f2e205';
 const darkYellow = darken(0.2, yellow);
@@ -78,9 +77,14 @@ const Top = styled.div`
     display: block;
     max-width: none;
     position: absolute;
-    bottom: 0;
     left: 50%;
+    top: 0;
     transform: translateX(-50%);
+    width: 2560px;
+
+    @media (min-width: 2560px) {
+      width: 100%;
+    }
   }
 `;
 
@@ -88,7 +92,7 @@ const Bottom = styled(Top)`
   height: 6rem;
 
   img {
-    top: 0;
+    top: -0.5rem;
   }
 `;
 
@@ -164,7 +168,7 @@ export default () => {
     >
       <GlobalStyles>
         <Top>
-          <img src={croppedBeachA} alt="Port Douglas, Queensland" />
+          <img src={croppedBeach} alt="Port Douglas, Queensland" />
         </Top>
         <StyledCV>
           <Header>
@@ -257,7 +261,7 @@ export default () => {
           </Footer>
         </StyledCV>
         <Bottom>
-          <img src={croppedBeachB} alt="Port Douglas, Queensland" />
+          <img src={croppedBeach} alt="Port Douglas, Queensland" />
         </Bottom>
       </GlobalStyles>
     </Frame>
