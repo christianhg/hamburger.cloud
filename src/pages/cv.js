@@ -1,6 +1,7 @@
 import { darken } from 'polished';
 import React from 'react';
 import styled from 'styled-components';
+import { Christian } from '../components/christian';
 import { Frame } from '../components/frame';
 import { GlobalStyles } from '../components/global-styles';
 import { Logo } from '../components/logo';
@@ -33,6 +34,16 @@ const Subsection = styled.div`
 
   @media screen {
     margin-bottom: 3rem;
+  }
+`;
+
+const Me = styled(Subsection)`
+  border: 1px solid ${darkYellow};
+  padding: 0.5rem;
+
+  img {
+    display: block;
+    filter: grayscale(1);
   }
 `;
 
@@ -177,6 +188,9 @@ export default () => {
             </h1>
             <h2>CV</h2>
           </Header>
+          <Me>
+            <Christian />
+          </Me>
           <Subsection>
             <h2>Introduction</h2>
             <p>
