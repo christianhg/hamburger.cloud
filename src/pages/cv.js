@@ -5,10 +5,11 @@ import { Frame } from '../components/frame';
 import { GlobalStyles } from '../components/global-styles';
 import { Logo } from '../components/logo';
 import { Section } from '../components/section';
-import { StyledDate } from '../components/styles';
+import { FlipHorizontal, StyledDate } from '../components/styles';
 import { education } from '../data/education';
 import { positions } from '../data/positions';
 import croppedBeach from './cropped-beach.jpg';
+import { Me } from '../components/me';
 
 const yellow = '#f2e205';
 const darkYellow = darken(0.2, yellow);
@@ -16,8 +17,6 @@ const darkYellow = darken(0.2, yellow);
 const black = '#222222';
 
 const Header = styled.header`
-  display: inline-flex;
-  flex-direction: column-reverse;
   margin-bottom: 2rem;
 
   h1 {
@@ -203,10 +202,12 @@ export default () => {
         </Top>
         <StyledCV>
           <Header>
-            <h1>
-              Christian Hamburger Grøngaard<span>Front-End Developer</span>
-            </h1>
-            <h2>CV</h2>
+            <FlipHorizontal>
+              <h1>
+                Christian Hamburger Grøngaard<span>Front-End Developer</span>
+              </h1>
+              <h2>CV</h2>
+            </FlipHorizontal>
           </Header>
           <Subsection>
             <h2>Introduction</h2>
@@ -217,6 +218,9 @@ export default () => {
               a good eye for design and UX and used to pursue a more
               design-oriented career.
             </p>
+          </Subsection>
+          <Subsection>
+            <Me />
           </Subsection>
           <Subsection>
             <h2>On the job</h2>

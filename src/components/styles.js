@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const FlipHorizontal = styled.div`
+  display: inline-flex;
+  flex-direction: column-reverse;
+`;
+
 export const StyledDate = styled.p`
   font-size: 0.8em;
   text-transform: uppercase;
