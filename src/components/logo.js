@@ -11,7 +11,7 @@ const StyledLogo = styled.div`
 
 export const Logo = ({ width }) => (
   <StyledLogo width={width}>
-    <Link to="./">
+    <Link to="/">
       <img src={logo} alt="Christians 'G' logo" />
     </Link>
   </StyledLogo>
