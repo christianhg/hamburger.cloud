@@ -3,12 +3,14 @@
     "title": "Intern and Student Developer",
     "company": "OnlinePlus ApS",
     "link": "https://www.onlineplus.dk/",
+    "info": "At OnlinePlus I worked as a WordPress developer and graphic designer. Here I lead the way in developing fluid and responsive websites.",
     "start": "2013-02",
     "end": "2013-06"
   },
   {
     "title": "Owner",
     "company": "Webdesign v/ Christian Grøngaard",
+    "info": "Self-employment during my studies to accommodate ad-hoc projects.",
     "start": "2011-08",
     "end": "2014-06"
   },
@@ -16,6 +18,7 @@
     "title": "Web Developer",
     "company": "Create Inside ApS",
     "link": "https://www.createinside.com/",
+    "info": "At Create Inside I functioned as a full stack developer. I also did bits of graphic design from time to time.",
     "start": "2014-04",
     "end": "2015-12"
   },
@@ -23,6 +26,7 @@
     "title": "Front-End Developer",
     "company": "Escenic AS",
     "link": "http://www.escenic.com/",
+    "info": "At Escenic I work in the R&D department where I have a prominent role in the development of the in-house product CUE.",
     "start": "2016-01"
   }
 ]

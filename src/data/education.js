@@ -7,11 +7,12 @@ export const education = sortData(require('../data/education.json')).map(
   createEducation
 );
 
-function createEducation({ title, place, start, end }) {
+function createEducation({ title, place, grades, start, end }) {
   return {
     id: uuidv5(`${start}-${title}`, 'a7c1869b-34aa-4244-b2e2-db7c2b43c09b'),
     title,
     place,
+    grades,
     start: format(start, 'YYYY'),
     end: end ? format(end, 'YYYY') : undefined,
   };

@@ -2,12 +2,23 @@
   {
     "title": "Bachelor of Web Development",
     "place": "Business Academy Aarhus",
+    "grades": [
+      "Back End Programming: A",
+      "Security: A",
+      "Frameworks and Source Code Management: A",
+      "Bachelor Project: A"
+    ],
     "start": "2013",
     "end": "2015"
   },
   {
     "title": "AP Graduate in Multimedia Design and Communication",
     "place": "Erhvervsakademiet Lillebælt",
+    "grades": [
+      "First year's test: B",
+      "Second year's test: A",
+      "Final exam: A"
+    ],
     "start": "2011",
     "end": "2013"
   },

@@ -121,6 +121,13 @@ const StyledLi = styled.li`
       width: 0.1rem;
     }
   }
+
+  h4 {
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
 `;
 
 const Place = styled.p`
@@ -128,27 +135,51 @@ const Place = styled.p`
   margin-bottom: 0;
 `;
 
-const Title = styled.p`
+const Title = styled.h3`
+  font-size: 1em;
+  font-weight: normal;
   margin-bottom: 0;
 `;
 
-const Position = ({ id, title, company, link, start, end }) => (
+const StyledInfo = styled.p`
+  font-size: 0.8em;
+  font-style: italic;
+`;
+
+const StyledGrades = styled.ul`
+  font-size: 0.8em;
+  font-style: italic;
+  padding-left: 1rem;
+`;
+
+const Position = ({ id, title, company, link, info, start, end }) => (
   <StyledLi key={id}>
     <Title>{title}</Title>
     <Place>{link ? <a href={link}>{company}</a> : company}</Place>
     <StyledDate>
       {start} – {end ? end : 'Present'}
     </StyledDate>
+    <StyledInfo>{info}</StyledInfo>
   </StyledLi>
 );
 
-const Education = ({ id, title, place, start, end }) => (
+const Education = ({ id, title, place, grades, start, end }) => (
   <StyledLi key={id}>
     <Title>{title}</Title>
     <Place>{place}</Place>
     <StyledDate>
       {start} – {end ? end : 'Present'}
     </StyledDate>
+    {grades && (
+      <>
+        <h4>Grades:</h4>
+        <StyledGrades>
+          {grades.map((grade, index) => (
+            <li key={`${id}${index}`}>{grade}</li>
+          ))}
+        </StyledGrades>
+      </>
+    )}
   </StyledLi>
 );
 
