@@ -2,6 +2,7 @@
   {
     "title": "Bachelor of Web Development",
     "place": "Business Academy Aarhus",
+    "link": "https://www.baaa.dk/",
     "grades": [
       "Back End Programming: A",
       "Security: A",
@@ -13,7 +14,8 @@
   },
   {
     "title": "AP Graduate in Multimedia Design and Communication",
-    "place": "Erhvervsakademiet Lillebælt",
+    "place": "University College Lillebælt",
+    "link": "https://www.ucl.dk/",
     "grades": [
       "First year's test: B",
       "Second year's test: A",
@@ -25,12 +27,14 @@
   {
     "title": "Graphic Design",
     "place": "Den Skandinaviske Designhøjskole",
+    "link": "http://www.designhojskolen.dk/",
     "start": "2009",
     "end": "2009"
   },
   {
     "title": "Computer Science",
     "place": "Aarhus University",
+    "link": "http://www.au.dk/",
     "start": "2008",
     "end": "2009"
   }

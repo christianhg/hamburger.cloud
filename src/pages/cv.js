@@ -162,10 +162,10 @@ const Position = ({ id, title, company, link, info, start, end }) => (
   </StyledLi>
 );
 
-const Education = ({ id, title, place, grades, start, end }) => (
+const Education = ({ id, title, link, place, grades, start, end }) => (
   <StyledLi key={id}>
     <Title>{title}</Title>
-    <Place>{place}</Place>
+    <Place>{link ? <a href={link}>{place}</a> : place}</Place>
     <StyledDate>
       {start} – {end ? end : 'Present'}
     </StyledDate>
