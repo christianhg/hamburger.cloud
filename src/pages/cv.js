@@ -4,12 +4,13 @@ import styled from 'styled-components';
 import { Frame } from '../components/frame';
 import { GlobalStyles } from '../components/global-styles';
 import { Logo } from '../components/logo';
+import { Me } from '../components/me';
 import { Section } from '../components/section';
 import { FlipHorizontal, StyledDate } from '../components/styles';
 import { education } from '../data/education';
+import { work } from '../data/nonprofit-work';
 import { positions } from '../data/positions';
 import croppedBeach from './cropped-beach.jpg';
-import { Me } from '../components/me';
 
 const yellow = '#f2e205';
 const darkYellow = darken(0.2, yellow);
@@ -162,6 +163,16 @@ const Position = ({ id, title, company, link, info, start, end }) => (
   </StyledLi>
 );
 
+const Work = ({ id, place, info, start, end }) => (
+  <StyledLi key={id}>
+    <Title>{place}</Title>
+    <StyledDate>
+      {start} – {end ? end : 'Present'}
+    </StyledDate>
+    <StyledInfo>{info}</StyledInfo>
+  </StyledLi>
+);
+
 const Education = ({ id, title, link, place, grades, start, end }) => (
   <StyledLi key={id}>
     <Title>{title}</Title>
@@ -270,6 +281,10 @@ export default () => {
           <Subsection>
             <h2>Education</h2>
             <StyledOl>{education.map(Education)}</StyledOl>
+          </Subsection>
+          <Subsection>
+            <h2>Non-profit Work</h2>
+            <StyledOl>{work.map(Work)}</StyledOl>
           </Subsection>
           <Subsection>
             <Logo width="2rem" />
