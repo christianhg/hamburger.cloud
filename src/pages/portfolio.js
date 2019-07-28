@@ -1,17 +1,44 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Footer } from '../components/footer';
 import { Frame } from '../components/frame';
 import { GlobalStyles } from '../components/global-styles';
-import malffd from '../portfolio/malffd.jpg';
+import { Header } from '../components/header';
+import { Inner, IntroBox, StyledSection } from '../components/styles';
+import colfach from '../portfolio/colfach.png';
+import easyTV from '../portfolio/easytv.png';
+import detFynskB from '../portfolio/det-fynsk-b.jpg';
 import lydiprovinsen1 from '../portfolio/lydiprovinsen-1.png';
 import lydiprovinsen2a from '../portfolio/lydiprovinsen-2a.png';
-import tankestroem from '../portfolio/tankestroem.jpg';
-import colfach from '../portfolio/colfach.png';
+import malffd from '../portfolio/malffd.jpg';
 import odenseVinterjazz from '../portfolio/odense-vinterjazz.png';
-import detFynsk from '../portfolio/det-fynsk.png';
-import { StyledSection, Inner } from '../components/styles';
+import tankestroem from '../portfolio/tankestroem.jpg';
+import museums from '../portfolio/museums.jpg';
+import djas from '../portfolio/djas.jpg';
+import djasLogo from '../portfolio/djas-logo.jpg';
+import tschichold from '../portfolio/tschichold.jpg';
 
 const pieces = [
+  {
+    images: [
+      {
+        src: tschichold,
+        alt:
+          'Abstract poster with the following quote from Jan Tschichold: "The real meaning of form is made clearer by its opposite. We could not recognize day as day if night did not exist."',
+        orientation: 'portrait',
+      },
+    ],
+    title: 'Tschichold',
+    description: 'Tribute to Jan Tschichold',
+  },
+  {
+    images: [
+      { src: djas, alt: '', orientation: 'portrait' },
+      { src: djasLogo, alt: '' },
+    ],
+    title: "['djas]",
+    description: 'Logo and visual identity for a jazz community',
+  },
   {
     images: [
       { src: malffd, alt: 'Skateboarder jumps over the "Malffd" logotype' },
@@ -22,9 +49,22 @@ const pieces = [
   {
     images: [
       {
+        src: museums,
+        alt: 'Poster showing infographics',
+        orientation: 'portrait',
+      },
+    ],
+    title: 'Museums',
+    description:
+      "Infographics of the visiting numbers of Denmark's biggest museums",
+  },
+  {
+    images: [
+      {
         src: lydiprovinsen1,
         alt:
           'Lyd I Provinsen logo depicting Jutland on a vinyl with the turntable needle pointing at Aarhus',
+        orientation: 'square',
       },
     ],
     title: 'Lyd I Provinsen (1)',
@@ -40,24 +80,29 @@ const pieces = [
       { src: tankestroem, alt: 'Two hands are holding miniature Christians' },
     ],
     title: 'Tankestrøm',
-    description: '...',
+    description: 'Strung up',
   },
   {
     images: [
       { src: colfach, alt: 'Logo depicting mountains mirroring in a lake' },
     ],
     title: 'Colfach',
-    description: '...',
+    description: 'Logo for a joint album release and charity campaign',
   },
   {
-    images: [{ src: odenseVinterjazz, alt: '' }],
+    images: [{ src: odenseVinterjazz, alt: '', orientation: 'square' }],
     title: 'Odense Vinterjazz',
-    description: '...',
+    description: 'Logo for a jazz festival',
   },
   {
-    images: [{ src: detFynsk, alt: '' }],
+    images: [{ src: detFynskB, alt: '' }],
     title: "Det' Fynsk",
-    description: '...',
+    description: 'Logo for a local distributer of food on Funen, Denmark',
+  },
+  {
+    images: [{ src: easyTV, alt: '' }],
+    title: 'easyTV',
+    description: 'Logo for a TV package search engine',
   },
 ];
 
@@ -65,7 +110,20 @@ const StyledPiece = styled.section`
   margin-bottom: 5rem;
 `;
 
-const PieceImages = styled.div``;
+const PieceImages = styled.div`
+  margin-bottom: 0.5rem;
+`;
+
+const PieceImage = styled.div`
+  text-align: center;
+
+  img {
+    max-width: ${props =>
+      props.orientation === 'portrait' || props.orientation === 'square'
+        ? '75%'
+        : '100%'};
+  }
+`;
 
 const PieceTitle = styled.h2`
   font-size: 1em;
@@ -77,8 +135,10 @@ const PieceDescription = styled.p``;
 const Piece = ({ images, title, description }) => (
   <StyledPiece key={`${title}-${description}`}>
     <PieceImages>
-      {images.map(({ src, alt }) => (
-        <img key={alt} src={src} alt={alt} />
+      {images.map(({ src, alt, orientation }, index) => (
+        <PieceImage key={index} orientation={orientation}>
+          <img src={src} alt={alt} />
+        </PieceImage>
       ))}
     </PieceImages>
     <PieceTitle>{title}</PieceTitle>
@@ -96,9 +156,17 @@ export default () => (
     }}
   >
     <GlobalStyles>
+      <Header />
+      <IntroBox>
+        <h1>Portfolio</h1>
+        <p>
+          Below you'll find a selection of Christian's work in graphic design.
+        </p>
+      </IntroBox>
       <StyledSection>
         <Inner>{pieces.map(Piece)}</Inner>
       </StyledSection>
+      <Footer />
     </GlobalStyles>
   </Frame>
 );

@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import { darken } from 'polished';
 import React from 'react';
 import styled from 'styled-components';
@@ -6,7 +7,7 @@ import { GlobalStyles } from '../components/global-styles';
 import { Logo } from '../components/logo';
 import { Me } from '../components/me';
 import { Section } from '../components/section';
-import { FlipHorizontal, StyledDate } from '../components/styles';
+import { FlipHorizontal, Small, StyledDate } from '../components/styles';
 import { education } from '../data/education';
 import { work } from '../data/nonprofit-work';
 import { positions } from '../data/positions';
@@ -26,6 +27,15 @@ const Header = styled.header`
       font-size: 0.8em;
     }
   }
+`;
+
+const Note = styled(Small)`
+  border: 1px dashed ${darkYellow};
+  border-radius: 1rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 `;
 
 const Subsection = styled.div`
@@ -229,6 +239,10 @@ export default () => {
               a good eye for design and UX and used to pursue a more
               design-oriented career.
             </p>
+            <Note>
+              Check out some of my design work in{' '}
+              <Link to="/portfolio">my portfolio</Link>.
+            </Note>
           </Subsection>
           <Subsection>
             <Me />

@@ -1,12 +1,20 @@
 import styled from 'styled-components';
+import { Section } from './section';
 
 export const FlipHorizontal = styled.div`
   display: inline-flex;
   flex-direction: column-reverse;
 `;
 
-export const StyledDate = styled.p`
+export const IntroBox = styled(Section)`
+  background-color: #f6f6f6;
+`;
+
+export const Small = styled.p`
   font-size: 0.8em;
+`;
+
+export const StyledDate = styled(Small)`
   text-transform: uppercase;
 `;
 
