@@ -266,18 +266,18 @@ export default () => {
               .
             </p>
             <p>
-              I want to believe that I’m being provided with autonomy and
-              responsibility because I’m a person who deeply cares about the
-              product and its creation. A person who isn’t afraid to ask why
-              something works the way it works or why a particular feature is
-              needed.
-            </p>
-            <p>
               When I’m not engaged in providing the best possible user
               experience both through APIs and user interfaces, I’m usually
               invested in our team of ~20 front-end developers. Endorsing
               knowledge-sharing, trying out new tools and techniques as well as
               improving our development environment comes naturally to me.
+            </p>
+            <p>
+              I want to believe that I’m being provided with autonomy and
+              responsibility because I’m a person who deeply cares about the
+              product and its creation. A person who isn’t afraid to ask why
+              something works the way it works or why a particular feature is
+              needed.
             </p>
           </Subsection>
           <Subsection>

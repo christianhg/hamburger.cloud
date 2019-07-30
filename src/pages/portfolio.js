@@ -6,16 +6,19 @@ import { GlobalStyles } from '../components/global-styles';
 import { Header } from '../components/header';
 import { Inner, IntroBox, StyledSection } from '../components/styles';
 import colfach from '../portfolio/colfach.png';
-import easyTV from '../portfolio/easytv.png';
 import detFynskB from '../portfolio/det-fynsk-b.jpg';
+import djasLogo from '../portfolio/djas-logo.jpg';
+import djas from '../portfolio/djas.jpg';
+import easyTV from '../portfolio/easytv.png';
+import fluxfestival2015 from '../portfolio/fluxfestival2015.jpg';
 import lydiprovinsen1 from '../portfolio/lydiprovinsen-1.png';
 import lydiprovinsen2a from '../portfolio/lydiprovinsen-2a.png';
 import malffd from '../portfolio/malffd.jpg';
-import odenseVinterjazz from '../portfolio/odense-vinterjazz.png';
-import tankestroem from '../portfolio/tankestroem.jpg';
 import museums from '../portfolio/museums.jpg';
-import djas from '../portfolio/djas.jpg';
-import djasLogo from '../portfolio/djas-logo.jpg';
+import odenseVinterjazz from '../portfolio/odense-vinterjazz.png';
+import poprevo from '../portfolio/poprevo2.jpg';
+import snedkermesteren from '../portfolio/snedkermesteren2.jpg';
+import tankestroem from '../portfolio/tankestroem.jpg';
 import tschichold from '../portfolio/tschichold.jpg';
 
 const pieces = [
@@ -29,7 +32,7 @@ const pieces = [
       },
     ],
     title: 'Tschichold',
-    description: 'Tribute to Jan Tschichold',
+    description: 'Tribute to Jan Tschichold (poster)',
   },
   {
     images: [
@@ -45,6 +48,21 @@ const pieces = [
     ],
     title: 'Malffd',
     description: 'Logotype for a streetwear brand',
+  },
+  {
+    images: [{ src: poprevo, alt: 'Website for Pop Revo' }],
+    title: 'Pop Revo',
+    description: 'Website for a music festival',
+  },
+  {
+    images: [{ src: snedkermesteren, alt: 'Website for Snedkermesteren' }],
+    title: 'Snedkermesteren',
+    description: 'Website for a carpenter',
+  },
+  {
+    images: [{ src: fluxfestival2015, alt: 'Website for Flux Festival 2015' }],
+    title: 'Flux Festival',
+    description: 'Website for a music festival',
   },
   {
     images: [
@@ -81,6 +99,7 @@ const pieces = [
     ],
     title: 'Tankestrøm',
     description: 'Strung up',
+    hidden: true,
   },
   {
     images: [
@@ -88,21 +107,25 @@ const pieces = [
     ],
     title: 'Colfach',
     description: 'Logo for a joint album release and charity campaign',
+    hidden: true,
   },
   {
     images: [{ src: odenseVinterjazz, alt: '', orientation: 'square' }],
     title: 'Odense Vinterjazz',
     description: 'Logo for a jazz festival',
+    hidden: true,
   },
   {
     images: [{ src: detFynskB, alt: '' }],
     title: "Det' Fynsk",
     description: 'Logo for a local distributer of food on Funen, Denmark',
+    hidden: true,
   },
   {
     images: [{ src: easyTV, alt: '' }],
     title: 'easyTV',
     description: 'Logo for a TV package search engine',
+    hidden: true,
   },
 ];
 
@@ -164,7 +187,7 @@ export default () => (
         </p>
       </IntroBox>
       <StyledSection>
-        <Inner>{pieces.map(Piece)}</Inner>
+        <Inner>{pieces.filter(({ hidden }) => !hidden).map(Piece)}</Inner>
       </StyledSection>
       <Footer />
     </GlobalStyles>
