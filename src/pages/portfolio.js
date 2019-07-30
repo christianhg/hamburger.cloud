@@ -10,14 +10,14 @@ import detFynskB from '../portfolio/det-fynsk-b.jpg';
 import djasLogo from '../portfolio/djas-logo.jpg';
 import djas from '../portfolio/djas.jpg';
 import easyTV from '../portfolio/easytv.png';
-import fluxfestival2015 from '../portfolio/fluxfestival2015.jpg';
+import fluxfestival2015 from '../portfolio/fluxfestival2015-2.jpg';
 import lydiprovinsen1 from '../portfolio/lydiprovinsen-1.png';
 import lydiprovinsen2a from '../portfolio/lydiprovinsen-2a.png';
 import malffd from '../portfolio/malffd.jpg';
 import museums from '../portfolio/museums.jpg';
 import odenseVinterjazz from '../portfolio/odense-vinterjazz.png';
-import poprevo from '../portfolio/poprevo2.jpg';
-import snedkermesteren from '../portfolio/snedkermesteren2.jpg';
+import poprevo from '../portfolio/poprevo-2.jpg';
+import snedkermesteren from '../portfolio/snedkermesteren-2.jpg';
 import tankestroem from '../portfolio/tankestroem.jpg';
 import tschichold from '../portfolio/tschichold.jpg';
 
