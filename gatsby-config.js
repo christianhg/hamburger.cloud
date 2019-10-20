@@ -77,6 +77,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
+            title: "hamburger.cloud's RSS feed",
           },
         ],
       },
