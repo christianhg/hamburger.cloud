@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "gatsby develop",
     "dist": "npm run prettier-production && gatsby build && cp googlecfb0a8661b3fb380.html public",
-    "prettier": "prettier --write \"{**/*,*}.{md,js,json,css,yml}\"",
-    "prettier-production": "prettier --list-different \"{**/*,*}.{md,js,json,css,yml}\"",
-    "prettier-staged": "pretty-quick --staged --pattern \"{**/*,*}.{md,js,json,css,yml}\""
+    "prettier": "prettier --write \"{**/*,*}.{md,js,json,css,ts,yml}\"",
+    "prettier-production": "prettier --list-different \"{**/*,*}.{md,js,json,css,ts,yml}\"",
+    "prettier-staged": "pretty-quick --staged --pattern \"{**/*,*}.{md,js,json,css,ts,yml}\""
   },
   "dependencies": {},
   "devDependencies": {
