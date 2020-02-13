@@ -27,6 +27,14 @@
     "company": "Escenic AS",
     "link": "http://www.escenic.com/",
     "info": "At Escenic I work in the R&D department where I have a prominent role in the development of the in-house product CUE.",
-    "start": "2016-01"
+    "start": "2016-01",
+    "end": "2020-01"
+  },
+  {
+    "title": "Front-End Developer",
+    "company": "Stibo DX",
+    "link": "https://stibodx.com/",
+    "info": "In February 2020, Escenic and CCI merged under a new company brand, Stibo DX. As for me, I'm still the same.",
+    "start": "2020-02"
   }
 ]

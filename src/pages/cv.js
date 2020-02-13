@@ -251,15 +251,12 @@ export default () => {
             <h2>On the job</h2>
             <p>
               I’m a {age}-year-old Dane working as a front-end developer at{' '}
-              <a href="http://www.escenic.com/">Escenic AS</a> where I have a
+              <a href="https://stibodx.com/">Stibo DX</a> where I have a
               prominent role in planning out and developing{' '}
-              <a href="http://www.escenic.com/solutions/cue">CUE</a>: a flexible
+              <a href="https://www.cuepublishing.com/news/">CUE</a>: a flexible
               and extendable CMS for newsrooms. Currently I’m involved in the
-              development of a{' '}
-              <a href="http://www.escenic.com/solutions/content-store">
-                completely new content creation workflow
-              </a>{' '}
-              akin to the{' '}
+              development of a completely new content creation workflow akin to
+              the{' '}
               <a href="https://wordpress.org/gutenberg/">
                 WordPress Gutenberg editor
               </a>

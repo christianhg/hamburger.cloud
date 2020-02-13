@@ -19,7 +19,7 @@ export const About = () => (
     <Me />
     <p>
       Currently he works as a front-end developer at{' '}
-      <a href="http://escenic.com">Escenic AS</a> where he fights complexity in
+      <a href="https://stibodx.com">Stibo DX</a> where he fights complexity in
       large applications for newsrooms. He's been developing for the Web on and
       off since the early 2000s, got a good eye for design and UX and used to
       pursue a more design-oriented career.
