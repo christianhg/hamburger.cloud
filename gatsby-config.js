@@ -83,13 +83,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-35381607-10',
-        head: false,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `hamburger.cloud`,
