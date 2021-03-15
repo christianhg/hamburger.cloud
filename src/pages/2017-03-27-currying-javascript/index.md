@@ -21,8 +21,8 @@ A curried version could look like this:
 
 ```js
 function sliceCurried(from) {
-  return function(to) {
-    return function(xs) {
+  return function (to) {
+    return function (xs) {
       return xs.slice(from, to);
     };
   };

@@ -43,20 +43,18 @@ const Account = account => (
 export const Accounts = () => (
   <p>
     Christian's online presence includes{' '}
-    {accounts
-      .map(Account)
-      .reduce(
-        (result, account, index) =>
-          cond([
-            [equals(0), always(['a ', account])],
-            [
-              equals(dec(accounts.length)),
-              always([...result, ' and a ', account]),
-            ],
-            [T, always([...result, ', a ', account])],
-          ])(index),
-        []
-      )}
+    {accounts.map(Account).reduce(
+      (result, account, index) =>
+        cond([
+          [equals(0), always(['a ', account])],
+          [
+            equals(dec(accounts.length)),
+            always([...result, ' and a ', account]),
+          ],
+          [T, always([...result, ', a ', account])],
+        ])(index),
+      []
+    )}
     .
   </p>
 );
